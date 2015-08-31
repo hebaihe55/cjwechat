@@ -60,7 +60,7 @@
             </div>
             <div id="gray">
                 <label onclick="location.href=''">
-                    <font style="text-decoration: underline;">忘记6的密码</font></label>
+                    <font style="text-decoration: underline;">忘对方答复记6的密码</font></label>
             </div>
             <div id="bt">
                 <div class="bt_div">
