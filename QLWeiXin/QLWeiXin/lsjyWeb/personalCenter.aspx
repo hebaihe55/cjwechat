@@ -3,7 +3,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title></title>
     <link href="css/personal.css" rel="stylesheet" type="text/css" />
     <script src="js/personCenter.js" type="text/javascript"></script>
@@ -41,8 +41,8 @@
                 <div id="person_img">
                 </div>
                 <div id="person_uid">
-                    <asp:Label runat="server" Text="绿色家园"></asp:Label><br />
-                    <asp:Label runat="server" Text="ID:13917483303"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="绿色家园"></asp:Label><br />
+                    <asp:Label ID="Label2" runat="server" Text="ID:13917483303"></asp:Label>
                 </div>
             </div>
             <div class="gray">
@@ -64,7 +64,7 @@
                     <div class="tr_ico">
                         <img src="img/person_like.png" /></div>
                     <div class="tr_name">
-                        我的收藏</div>
+                        修改密码</div>
                 </div>
             </div>
             <div class="gray">
