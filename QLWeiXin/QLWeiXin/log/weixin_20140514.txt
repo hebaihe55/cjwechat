@@ -1,0 +1,2 @@
+2014/5/14 21:08:29:<xml><ToUserName><![CDATA[gh_ad3cff21ac9e]]></ToUserName><FromUserName><![CDATA[oXXgKjy0gDLYvPrCA9tqhQAFFl7w]]></FromUserName><CreateTime>1400072668</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[关于]]></Content><MsgId>6013266321283727861</MsgId></xml>
+2014/5/14 21:15:47:<xml><ToUserName><![CDATA[gh_ad3cff21ac9e]]></ToUserName><FromUserName><![CDATA[oXXgKjy0gDLYvPrCA9tqhQAFFl7w]]></FromUserName><CreateTime>1400072668</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[关于]]></Content><MsgId>6013266321283727861</MsgId></xml>

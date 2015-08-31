@@ -1,0 +1,1 @@
+2014/12/17 13:51:30:2014-12-17 12:23:51:<xml><ToUserName><![CDATA[gh_5d9933a3eed7]]></ToUserName><FromUserName><![CDATA[oim84uM0xkLBK29I5YzSfmHIIyqs]]></FromUserName><CreateTime>1418790236</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[大转盘]]></Content><MsgId>6093657663706469161</MsgId></xml>

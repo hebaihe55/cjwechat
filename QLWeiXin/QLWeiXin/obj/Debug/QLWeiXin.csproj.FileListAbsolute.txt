@@ -1,0 +1,22 @@
+c:\users\hejiyuan\documents\visual studio 2010\QLWeiXin\QLWeiXin\QLWeiXin\bin\QLWeiXin.dll
+c:\users\hejiyuan\documents\visual studio 2010\QLWeiXin\QLWeiXin\QLWeiXin\bin\QLWeiXin.pdb
+c:\users\hejiyuan\documents\visual studio 2010\QLWeiXin\QLWeiXin\QLWeiXin\obj\Debug\ResolveAssemblyReference.cache
+c:\users\hejiyuan\documents\visual studio 2010\QLWeiXin\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.dll
+c:\users\hejiyuan\documents\visual studio 2010\QLWeiXin\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.pdb
+C:\Users\cangguan\Documents\Tencent Files\2284424217\FileRecv\QLWeiXin(1)\QLWeiXin\QLWeiXin\bin\QLWeiXin.dll
+C:\Users\cangguan\Documents\Tencent Files\2284424217\FileRecv\QLWeiXin(1)\QLWeiXin\QLWeiXin\bin\QLWeiXin.pdb
+C:\Users\cangguan\Documents\Tencent Files\2284424217\FileRecv\QLWeiXin(1)\QLWeiXin\QLWeiXin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cangguan\Documents\Tencent Files\2284424217\FileRecv\QLWeiXin(1)\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.dll
+C:\Users\cangguan\Documents\Tencent Files\2284424217\FileRecv\QLWeiXin(1)\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.pdb
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150112\QLWeiXin(1)\QLWeiXin\QLWeiXin\bin\QLWeiXin.dll
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150112\QLWeiXin(1)\QLWeiXin\QLWeiXin\bin\QLWeiXin.pdb
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150112\QLWeiXin(1)\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.dll
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150112\QLWeiXin(1)\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.pdb
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150519\QLWeiXin\QLWeiXin\bin\QLWeiXin.dll
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150519\QLWeiXin\QLWeiXin\bin\QLWeiXin.pdb
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150519\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.dll
+C:\Users\hejiyuan\Documents\Visual Studio 2010\QLWeiXin20150519\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.pdb
+C:\Users\Administrator\Desktop\QLWeiXin\QLWeiXin\bin\QLWeiXin.dll
+C:\Users\Administrator\Desktop\QLWeiXin\QLWeiXin\bin\QLWeiXin.pdb
+C:\Users\Administrator\Desktop\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.dll
+C:\Users\Administrator\Desktop\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.pdb

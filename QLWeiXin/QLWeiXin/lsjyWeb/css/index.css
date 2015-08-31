@@ -1,0 +1,316 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+}
+.bodys
+{
+    width:100%;
+}
+.backgrounds
+{
+    width:640px;
+    height:1030px;
+}
+#map
+{
+    width:640px;
+    height:83px;
+    float:left;
+    position:relative;
+    z-index:2;
+    background-image:url(../img/map.png);
+    background-color:transparent;
+}
+#address
+{
+    width:420px;
+    height:45px;
+    float:left;
+    margin-top:15px;
+    font-size:28px;
+    font-family:微软雅黑;
+    padding-top:5px;
+    text-align:left;
+    padding-left:30px;
+    cursor:pointer;
+}
+#logon_ico
+{
+    height:45px;
+    width:45px;
+    float:right;
+    margin-right:20px;
+    margin-top:20px;
+}
+#content
+{
+    width:640px;
+    height:950px;
+    float:left;
+}
+#menu
+{
+    width:180px;
+    height:950px;
+    float:left;
+    background-color:white;
+}
+.menu_once
+{
+    border-bottom:1px solid rgb(200,200,200);
+    font-size:30px;
+    height:72px;
+    width:180px;
+    float:left;
+    text-align:center;
+    background-color:White;
+    padding-top:38px;
+    font-family:微软雅黑;
+    color:#4C4646;
+}
+#product
+{
+    width:457px;
+    height:950px;
+    float:left;
+    border-left:3px solid white;
+    overflow:hidden;
+}
+#bottom
+{
+    width:640px;
+    height:350px;
+    background-color:transparent;
+    float:left;
+    margin-top:-350px;
+}
+#go_sale
+{
+    width:180px;
+    height:210px;
+    float:left;
+    background-color:white;
+}
+#go_sale_money
+{
+    width:180px;
+    height:37px;
+    color:pink;
+    float:left;
+    background-color:white;
+    text-align:center;
+    font-size:28px;
+    color:#fd6a37;
+    font-family:Arial;
+}
+#go_sale_img
+{
+    width:130px;
+    height:158px;
+    float:left;
+    background-color:white;
+    margin-left:24px;
+}
+#go_sale_img_1
+{
+    width:45px;
+    height:54px;
+    float:left;
+    background-repeat:no-repeat;
+    text-align:right;
+    padding-top:30px;
+}
+#go_sale_img_1_label
+{
+    width:37px;
+    height:37px;
+    background-image:url(../img/count.png);
+    border:0px;
+    background-color:transparent;
+    background-repeat:no-repeat;
+}
+#go_sale_img_2
+{
+    width:85px;
+    height:84px;
+    float:left;
+    background-image:url(../img/logo.png);
+    background-repeat:no-repeat;
+    background-position:left;
+}
+#go_sale_img_3
+{
+    width:130px;
+    height:54px;
+    float:left;
+    background-image:url(../img/go_sale.png);
+}
+.cover
+{
+    width:457px;
+    height:260px;
+    float:left;
+    background-image:url(../img/demo_2.jpg);
+}
+.pro_name
+{
+    width:437px;
+    height:40px;
+    float:left;
+    text-align:right;
+    font-family:微软雅黑;
+    font-size:28px;
+    padding-right:20px;
+    padding-top:10px;
+}
+.pro_component
+{
+    width:437px;
+    height:40px;
+    font-size:20px;
+    font-family:微软雅黑;
+    text-align:right;
+    float:left;
+    padding-right:20px;
+    padding-top:5px;
+    color:rgb(100,100,100);
+}
+.pro_price
+{
+    width:437px;
+    height:80px;
+    float:left;
+    font-size:28px;
+    color:red;
+    text-align:right;
+    padding-right:20px;
+    font-family:微软雅黑;
+}
+.buttons
+{
+    width:437px;
+    height:80px;
+    float:left;
+    text-align:right;
+    padding-right:20px;
+}
+.jian
+{
+    width:80px;
+    height:80px;
+    background-color:transparent;
+    background-image:url(../img/minus.png);
+    border:0px;
+    float:right;
+    background-repeat:no-repeat;
+}
+.jia
+{
+    width:80px;
+    height:80px;
+    background-color:transparent;
+    background-image:url(../img/add.png);
+    border:0px;float:right;background-repeat:no-repeat;
+}
+.innerCount
+{
+    width:75px;
+    height:63px;
+    background-color:transparent;
+    background-image:url(../img/num.png);
+    border:0px;
+    font-size:36px;float:right;background-repeat:no-repeat;
+    text-align:center;
+    padding-top:17px;
+    font-family:Arial;
+    color:rgb(100,100,100);
+    padding-right:5px;
+}
+
+
+#wrapper 
+{
+    width:457px;
+    height:950px;
+    float:left;
+	overflow: hidden;
+}
+
+#scroller {
+	position:relative;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 457px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+}
+
+#scroller li {
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	background-color: #fafafa;
+	font-size: 14px;
+}
+#shop_name
+{
+    color:White;
+}
+
+#pro_2
+{
+    float:left;
+}
+.pro_div_same
+{
+    width:457px;
+    height:950px;
+    float:left;
+}
+#pro_1
+{
+    display:none;
+}
+#pro_2
+{
+    margin-top:-950px;
+    display:none;
+}
+#pro_3
+{
+    margin-top:-1900px;
+    display:none;
+}
+#pro_4
+{
+    margin-top:-2850px;
+    display:none;
+}
+#pro_5
+{
+    margin-top:-3800px;
+}

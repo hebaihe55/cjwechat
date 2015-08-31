@@ -1,0 +1,2 @@
+C:\Users\Administrator\Desktop\QLWeiXin\QLWeiXin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.dll

@@ -1,0 +1,130 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+}
+.bodys
+{
+    width:100%;
+}
+.backgrounds
+{
+    width:640px;
+    height:1030px;
+    background-color:#edf5e4;
+}
+.title_name
+{
+    width:640px;
+    height:80px;
+    float:left;
+    background-color:#5f9f3f;
+}
+#title_name_ico
+{
+    width:60px;
+    height:60px;
+    float:left;
+    text-align:left;
+    text-align:center;
+    padding-top:20px;
+}
+#title_name_font
+{
+    width:560px;
+    height:65x;
+    text-align:center;
+    font-size:36px;
+    font-family:微软雅黑;
+    padding-top:15px;
+    color:White;
+    padding-right:20px;
+}
+#logo
+{
+    width:640px;
+    height:162px;
+    float:left;
+    text-align:center;
+    padding-top:44px;
+}
+#txtDiv
+{
+    width:640px;
+    height:220px;
+    float:left;
+}
+.txt
+{
+    width:640px;
+    height:80px;
+    float:left;
+    margin-top:20px;
+    background-image:url(../img/input_box.png.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#bt
+{
+    width:640px;
+    height:200px;
+    float:left;
+}
+.bt_div
+{
+    width:640px;
+    height:80px;
+    float:left;
+    margin-top:15px;
+    text-align:center;
+}
+#loginBt
+{
+    background-image:url(../img/loginbutton.png.png);
+    border:0px;
+    width:540px;
+    height:80px;
+}
+#regBt
+{
+    background-image:url(../img/button_registered.png.png);
+    border:0px;
+    width:540px;
+    height:80px;
+}
+.txt_ico
+{
+    width:70px;
+    height:60px;
+    float:left;
+    padding-left:30px;
+    padding-top:20px;
+}
+.txt_textbox
+{
+    width:500px;
+    height:75px;
+    float:left;
+    text-align:left;
+    padding-top:5px;
+}
+.tb
+{
+    width:490px;
+    height:55px;
+    border:0px;
+    font-family:Arial;
+    font-size:34px;
+    color:RGB(100,100,100);
+}
+#gray
+{
+    width:600px;
+    height:40px;
+    font-family:微软雅黑;
+    text-align:right;
+    font-size:24px;
+    float:left;
+    padding-right:40px;
+    color:rgb(100,100,100);
+}
