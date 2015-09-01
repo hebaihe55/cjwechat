@@ -12,7 +12,7 @@ namespace QLWeiXin.lsjyWeb
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            this.username.Text = "aa";
+            this.username.Text = "bbaaaa";
 
 
 
