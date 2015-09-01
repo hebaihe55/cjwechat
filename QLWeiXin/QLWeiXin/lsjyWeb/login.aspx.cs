@@ -14,6 +14,9 @@ namespace QLWeiXin.lsjyWeb
 
             this.username.Text = "aa";
 
+
+
+
         }
     }
 }
