@@ -60,14 +60,14 @@
             </div>
             <div id="gray">
                 <label onclick="location.href=''">
-                    <font style="text-decoration: underline;">忘记密码</font></label>
+                    <font style="text-decoration: underline;"><a href="updatePass.aspx">忘记密码</a></font></label>
             </div>
             <div id="bt">
                 <div class="bt_div">
-                    <asp:Button runat="server" ID="loginBt" Text="" />
+                    <asp:Button runat="server" ID="loginBt" Text="" onclick="loginBt_Click" />
                 </div>
                 <div class="bt_div">
-                    <asp:Button runat="server" ID="regBt" Text="" />
+                    <asp:Button runat="server" ID="regBt" Text="" onclick="regBt_Click" />
                 </div>
             </div>
         </div>

@@ -33,6 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -66,22 +70,62 @@
     <Content Include="dazhuanpan\wechat.js" />
     <Content Include="demo.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="home.aspx" />
+    <Content Include="json\Newtonsoft.Json.dll" />
+    <Content Include="json\Newtonsoft.Json.pdb" />
+    <Content Include="json\Newtonsoft.Json.xml" />
+    <Content Include="lsjyWeb\addressManage.aspx" />
+    <Content Include="lsjyWeb\api.aspx" />
+    <Content Include="lsjyWeb\balance.aspx" />
+    <Content Include="lsjyWeb\confirm.aspx" />
+    <Content Include="lsjyWeb\css\addressManage.css" />
+    <Content Include="lsjyWeb\css\balance.css" />
+    <Content Include="lsjyWeb\css\handleResult.css" />
     <Content Include="lsjyWeb\css\login.css" />
+    <Content Include="lsjyWeb\css\myOrder.css" />
+    <Content Include="lsjyWeb\css\OrderDetails.css" />
     <Content Include="lsjyWeb\css\personal.css" />
     <Content Include="lsjyWeb\css\regist.css" />
     <Content Include="lsjyWeb\css\selectAddress.css" />
+    <Content Include="lsjyWeb\css\updateAddress.css" />
+    <Content Include="lsjyWeb\custom.aspx" />
+    <Content Include="lsjyWeb\fail.aspx" />
+    <Content Include="lsjyWeb\img\640-480.jpg" />
+    <Content Include="lsjyWeb\img\abe.png" />
+    <Content Include="lsjyWeb\img\ace.png" />
     <Content Include="lsjyWeb\img\add.png" />
+    <Content Include="lsjyWeb\img\addressbackground.png.png" />
+    <Content Include="lsjyWeb\img\ade.png" />
+    <Content Include="lsjyWeb\img\alipay.png.png" />
+    <Content Include="lsjyWeb\img\anniu_11.png" />
     <Content Include="lsjyWeb\img\arrow.png" />
+    <Content Include="lsjyWeb\img\beijing.png" />
+    <Content Include="lsjyWeb\img\bj.png" />
+    <Content Include="lsjyWeb\img\bouutn_duoshaomiao.png" />
+    <Content Include="lsjyWeb\img\button.png.png" />
+    <Content Include="lsjyWeb\img\button_changepassword.png" />
+    <Content Include="lsjyWeb\img\button_completepaymeng.png" />
+    <Content Include="lsjyWeb\img\button_edit.png" />
+    <Content Include="lsjyWeb\img\button_finish.png" />
+    <Content Include="lsjyWeb\img\button_immediatelypay.png" />
     <Content Include="lsjyWeb\img\button_obtain.png.png" />
     <Content Include="lsjyWeb\img\button_registee.png.png" />
     <Content Include="lsjyWeb\img\button_registered.png.png" />
+    <Content Include="lsjyWeb\img\button_save.png" />
+    <Content Include="lsjyWeb\img\button_tianjia.png" />
     <Content Include="lsjyWeb\img\button_verificationcode.png.png" />
+    <Content Include="lsjyWeb\img\button_zhuce.png" />
+    <Content Include="lsjyWeb\img\circle.png.png" />
+    <Content Include="lsjyWeb\img\cn.png" />
     <Content Include="lsjyWeb\img\count.png" />
     <Content Include="lsjyWeb\img\demo_1.jpg" />
     <Content Include="lsjyWeb\img\demo_2.jpg" />
+    <Content Include="lsjyWeb\img\efg_10.png" />
     <Content Include="lsjyWeb\img\go_sale.png" />
     <Content Include="lsjyWeb\img\icon.png.png" />
+    <Content Include="lsjyWeb\img\icon_paymen completion.png" />
     <Content Include="lsjyWeb\img\input_box.png.png" />
+    <Content Include="lsjyWeb\img\i_look.png" />
     <Content Include="lsjyWeb\img\laodas.jpg" />
     <Content Include="lsjyWeb\img\loginbutton.png.png" />
     <Content Include="lsjyWeb\img\login_ico.png" />
@@ -89,27 +133,44 @@
     <Content Include="lsjyWeb\img\logo.png" />
     <Content Include="lsjyWeb\img\map.png" />
     <Content Include="lsjyWeb\img\minus.png" />
+    <Content Include="lsjyWeb\img\morethan.png.png" />
     <Content Include="lsjyWeb\img\num.png" />
+    <Content Include="lsjyWeb\img\order_1.png" />
+    <Content Include="lsjyWeb\img\order_2.png" />
     <Content Include="lsjyWeb\img\personal_posi.png" />
     <Content Include="lsjyWeb\img\person_like.png" />
     <Content Include="lsjyWeb\img\person_man.png" />
     <Content Include="lsjyWeb\img\person_tel.png" />
     <Content Include="lsjyWeb\img\person_txt.png" />
     <Content Include="lsjyWeb\img\pos.png" />
+    <Content Include="lsjyWeb\img\qwe_10.png" />
+    <Content Include="lsjyWeb\img\qw_10.png" />
     <Content Include="lsjyWeb\img\return_button.png" />
+    <Content Include="lsjyWeb\img\ring.png.png" />
     <Content Include="lsjyWeb\img\unlock icon.png.png" />
     <Content Include="lsjyWeb\img\usernameicon.png.png" />
+    <Content Include="lsjyWeb\img\wechat.png.png" />
+    <Content Include="lsjyWeb\img\xiaopingguo_08.png" />
+    <Content Include="lsjyWeb\img\yuan_10.png" />
+    <Content Include="lsjyWeb\js\balance.js" />
+    <Content Include="lsjyWeb\js\dong.js" />
+    <Content Include="lsjyWeb\js\identifyingCode.js" />
     <Content Include="lsjyWeb\js\JScript1.js" />
     <Content Include="lsjyWeb\js\login.js" />
     <Content Include="lsjyWeb\js\personCenter.js" />
     <Content Include="lsjyWeb\js\position.js" />
     <Content Include="lsjyWeb\js\selectAddress.js" />
+    <Content Include="lsjyWeb\js\suit.js" />
     <Content Include="lsjyWeb\login.aspx" />
+    <Content Include="lsjyWeb\myOrder.aspx" />
+    <Content Include="lsjyWeb\newAddress.aspx" />
+    <Content Include="lsjyWeb\OrderDetails.aspx" />
     <Content Include="lsjyWeb\personalCenter.aspx" />
     <Content Include="lsjyWeb\registA.aspx" />
     <Content Include="lsjyWeb\registB.aspx" />
     <Content Include="lsjyWeb\selectAddress.aspx" />
     <Content Include="lsjyWeb\js\scroll.js" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="api.aspx.cs">
@@ -119,6 +180,11 @@
     <Compile Include="api.aspx.designer.cs">
       <DependentUpon>api.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Code\JsonHelper.cs" />
+    <Compile Include="Code\uiBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Util.cs" />
     <Compile Include="dazhuanpan\contents.aspx.cs">
       <DependentUpon>contents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,6 +209,56 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="lsjyWeb\addressManage.aspx.cs">
+      <DependentUpon>addressManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\addressManage.aspx.designer.cs">
+      <DependentUpon>addressManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\api.aspx.cs">
+      <DependentUpon>api.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\api.aspx.designer.cs">
+      <DependentUpon>api.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\balance.aspx.cs">
+      <DependentUpon>balance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\balance.aspx.designer.cs">
+      <DependentUpon>balance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\confirm.aspx.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\confirm.aspx.designer.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\custom.aspx.cs">
+      <DependentUpon>custom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\custom.aspx.designer.cs">
+      <DependentUpon>custom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\fail.aspx.cs">
+      <DependentUpon>fail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\fail.aspx.designer.cs">
+      <DependentUpon>fail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="lsjyWeb\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +275,27 @@
     </Compile>
     <Compile Include="lsjyWeb\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\myOrder.aspx.cs">
+      <DependentUpon>myOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\myOrder.aspx.designer.cs">
+      <DependentUpon>myOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\newAddress.aspx.cs">
+      <DependentUpon>newAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\newAddress.aspx.designer.cs">
+      <DependentUpon>newAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\OrderDetails.aspx.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\OrderDetails.aspx.designer.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="lsjyWeb\personalCenter.aspx.cs">
       <DependentUpon>personalCenter.aspx</DependentUpon>
@@ -188,15 +325,56 @@
     <Compile Include="lsjyWeb\selectAddress.aspx.designer.cs">
       <DependentUpon>selectAddress.aspx</DependentUpon>
     </Compile>
+    <Compile Include="lsjyWeb\success.aspx.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\success.aspx.designer.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\updateAddress.aspx.cs">
+      <DependentUpon>updateAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\updateAddress.aspx.designer.cs">
+      <DependentUpon>updateAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\updatePass.aspx.cs">
+      <DependentUpon>updatePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\updatePass.aspx.designer.cs">
+      <DependentUpon>updatePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\updatePassB.aspx.cs">
+      <DependentUpon>updatePassB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\updatePassB.aspx.designer.cs">
+      <DependentUpon>updatePassB.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="publicClass.cs" />
+    <Compile Include="sms\CCPRestSDK.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lsjyWeb\css\index.css" />
     <Content Include="lsjyWeb\index.aspx" />
+    <Content Include="lsjyWeb\success.aspx" />
+    <Content Include="lsjyWeb\updateAddress.aspx" />
+    <Content Include="lsjyWeb\updatePass.aspx" />
+    <Content Include="lsjyWeb\updatePassB.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -218,7 +396,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49451</DevelopmentServerPort>
+          <DevelopmentServerPort>9094</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

@@ -42,7 +42,7 @@
                 </div>
                 <div id="person_uid">
                     <asp:Label ID="Label1" runat="server" Text="绿色家园"></asp:Label><br />
-                    <asp:Label ID="Label2" runat="server" Text="ID:13917483303"></asp:Label>
+                    <asp:Label ID="mobile" runat="server" Text="ID:13917483303"></asp:Label>
                 </div>
             </div>
             <div class="gray">
@@ -52,19 +52,19 @@
                     <div class="tr_ico">
                         <img src="img/person_txt.png" /></div>
                     <div class="tr_name">
-                        我的订单</div>
+            <a href="myOrder.aspx">            我的订单</a> </div>
                 </div>
                 <div class="person_tr" onclick="clickDiv(this)">
                     <div class="tr_ico">
                         <img src="img/personal_posi.png" /></div>
                     <div class="tr_name">
-                        我的收货地址</div>
+                   <a href="addressManage.aspx">     我的收货地址</a></div>
                 </div>
                 <div class="person_tr" onclick="clickDiv(this)">
                     <div class="tr_ico">
                         <img src="img/person_like.png" /></div>
                     <div class="tr_name">
-                        修改密码</div>
+                <a href="updatePass.aspx">       修改密码</a> </div>
                 </div>
             </div>
             <div class="gray">
@@ -74,13 +74,13 @@
                     <div class="tr_ico">
                         <img src="img/person_man.png" /></div>
                     <div class="tr_name">
-                        关于我们</div>
+                  <a>      关于我们</a></div>
                 </div>
                 <div class="person_tr" onclick="clickDiv(this)">
                     <div class="tr_ico">
                         <img src="img/person_tel.png" /></div>
                     <div class="tr_name">
-                        联系客服</div>
+                <a href="custom.aspx">       联系客服</a> </div>
                 </div>
             </div>
         </div>

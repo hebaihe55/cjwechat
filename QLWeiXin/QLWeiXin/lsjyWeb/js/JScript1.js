@@ -1,16 +1,23 @@
 ﻿var myScroll;
-
+var myScroll2;
+var geol;
+var nowLatitude;
+var nowLongitude;
 /***页面加载***/
 function loaded() {
+
+    $("#shade").hide();
+
 
     //默认第一个菜单点中
     $("#menu_1").click();
 
     //调用滚动
     myScroll = new IScroll('#wrapper', {
-        preventDefault: false, //让默认的失效
+       preventDefault: false, //让默认的失效
         mouseWheel: true
     });
+
 
     //隐藏-、数量按钮
     $(".jian").hide();
@@ -19,9 +26,6 @@ function loaded() {
 
     if ($("#shop_name").text() == "") {
         //获取经纬度
-        var geol;
-        var nowLatitude;
-        var nowLongitude;
         try {
             if (typeof (navigator.geolocation) == 'undefined') {
                 geol = google.gears.factory.create('beta.geolocation');
@@ -36,6 +40,8 @@ function loaded() {
             geol.getCurrentPosition(function (position) {
                 nowLatitude = position.coords.latitude;
                 nowLongitude = position.coords.longitude;
+                $("#nowLatitudes").val(nowLatitude);
+                $("#nowLongitudes").val(nowLongitude);
                 var url = "js/pos.ashx?Latitude=" + nowLatitude + "&Longitude=" + nowLongitude;
                 startRequest(url, weatherStateChange);
 
@@ -88,6 +94,68 @@ function weatherStateChange() {
 
 /***首页的其余效果***/
 
+var tab = 0;
+//点击小苹果按钮
+$(document).ready(function () {
+    $("#go_sale_img").click(function () {
+        if (tab == 0) {
+            $("#bottom_90").hide();
+            $('.footer-detail-iscroll').show();
+            //缓冲一会儿再显示白色
+            setTimeout(function () {
+                $('.footer-detail-iscroll').addClass('show');
+            }, 100);
+            //小苹果向上走
+            setTimeout(function () { $('#go_sale_img').addClass('show'); }, 100);
+            //显示遮罩层
+            $("#shade").show();
+            tab = 1;
+            $("#bottom_90_sub_div").hide();
+        }
+        else {
+            setTimeout(function () {
+                $('.footer-detail-iscroll').removeClass('show');
+            }, 0);
+            setTimeout(function () {
+                $('#go_sale_img').removeClass('show');
+            }, 0);
+            $('#shade').hide();
+
+            setTimeout(function () {
+                $(".footer-detail-iscroll").hide();
+            }, 400);
+            setTimeout(function () {
+                $("#bottom_90").show();
+            }, 400);
+            tab = 0;
+            setTimeout(function () {
+                $("#bottom_90_sub_div").show();
+            }, 400);
+        }
+    });
+});
+
+//点击灰色地带
+$(document).ready(function () {
+    $("#shade").click(function () {
+        setTimeout(function () {
+            $('.footer-detail-iscroll').removeClass('show');
+            $('#go_sale_img').removeClass('show');
+            $('#shade').hide();
+            tab = 0;
+        }, 0);
+        setTimeout(function () {
+            $(".footer-detail-iscroll").hide();
+        }, 400);
+        setTimeout(function () {
+            $("#bottom_90").show();
+        }, 400);
+        tab = 0;
+        setTimeout(function () {
+            $("#bottom_90_sub_div").show();
+        }, 400);
+    });
+});
 
 
 //菜单点击效果
@@ -124,8 +192,8 @@ $(document).ready(function () {
         $("#menu_3").css("color", "#4C4646");
         $("#menu_4").css("color", "#4C4646");
         $("#menu_5").css("color", "#4C4646");
-        $("#pro_1").css("display", "none");
-        $("#pro_2").css("display", "block");
+        $("#pro_1").css("display", "block");
+        $("#pro_2").css("display", "none");
         $("#pro_3").css("display", "none");
         $("#pro_4").css("display", "none");
         $("#pro_5").css("display", "none");
@@ -145,9 +213,9 @@ $(document).ready(function () {
         $("#menu_3").css("backgroundColor", "#df5257");
         $("#menu_4").css("backgroundColor", "white");
         $("#menu_5").css("backgroundColor", "white");
-        $("#pro_1").css("display", "none");
+        $("#pro_1").css("display", "block");
         $("#pro_2").css("display", "none");
-        $("#pro_3").css("display", "block");
+        $("#pro_3").css("display", "none");
         $("#pro_4").css("display", "none");
         $("#pro_5").css("display", "none");
     });
@@ -156,7 +224,6 @@ $(document).ready(function () {
 //菜单点击效果
 $(document).ready(function () {
     $("#menu_4").click(function () {
-
         $("#menu_1").css("color", "#4C4646");
         $("#menu_2").css("color", "#4C4646");
         $("#menu_3").css("color", "#4C4646");
@@ -167,10 +234,10 @@ $(document).ready(function () {
         $("#menu_3").css("backgroundColor", "white");
         $("#menu_4").css("backgroundColor", "#df5257");
         $("#menu_5").css("backgroundColor", "white");
-        $("#pro_1").css("display", "none");
+        $("#pro_1").css("display", "block");
         $("#pro_2").css("display", "none");
         $("#pro_3").css("display", "none");
-        $("#pro_4").css("display", "block");
+        $("#pro_4").css("display", "none");
         $("#pro_5").css("display", "none");
     });
 });
@@ -188,11 +255,11 @@ $(document).ready(function () {
         $("#menu_3").css("backgroundColor", "white");
         $("#menu_4").css("backgroundColor", "white");
         $("#menu_5").css("backgroundColor", "#df5257");
-        $("#pro_1").css("display", "none");
+        $("#pro_1").css("display", "block");
         $("#pro_2").css("display", "none");
         $("#pro_3").css("display", "none");
         $("#pro_4").css("display", "none");
-        $("#pro_5").css("display", "block");
+        $("#pro_5").css("display", "none");
     });
 });
 
@@ -220,7 +287,7 @@ function funJia(obj) {
 //点击进入选择门店页面
 $(document).ready(function () {
     $("#address").click(function () {
-        location.href = 'selectAddress.aspx?shop_name=' + shopName + '&address_info=' + addressInfo;
+        location.href = 'selectAddress.aspx?Latitude=' + $("#nowLatitudes").val() + '&Longitude=' + $("#nowLongitudes").val();
     });
 });
 

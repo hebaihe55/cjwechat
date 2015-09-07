@@ -1,0 +1,173 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+}
+.bodys
+{
+    width:100%;
+    font-family:微软雅黑;
+}
+.backgrounds
+{
+    width:640px;
+    height:1030px;
+    background-color:#C8C8C8;
+}
+.title_name
+{
+    width:640px;
+    height:80px;
+    float:left;
+    background-color:#5f9f3f;
+}
+#title_name_ico
+{
+    width:60px;
+    height:60px;
+    float:left;
+    text-align:left;
+    text-align:center;
+    padding-top:20px;
+}
+#title_name_font
+{
+    width:560px;
+    height:65x;
+    text-align:center;
+    font-size:36px;
+    font-family:微软雅黑;
+    padding-top:15px;
+    color:White;
+    padding-right:20px;
+}
+.content_area
+{
+    width:640px;
+    height:950px;
+    float:left;
+    background-color:white;
+}
+#wrapper 
+{
+    width:640px;
+    height:950px;
+    float:left;
+	overflow: hidden;
+}
+
+#scroller {
+	position:relative;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 640px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.tdSate
+{
+    width:640px;
+    height:300px;
+    border-bottom:20px solid gray;
+}
+.tdSateDiv
+{
+    width:610px;
+    height:300px;
+    padding-left:30px;
+}
+.tdSateDiv_title
+{
+    width:580px;
+    height:60px;
+    border-bottom:1px solid rgb(200,200,200);
+    float:left;
+}
+.time_ico
+{
+    width:30px;
+    height:60px;
+    background-image:url(../img/order_1.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    float:left;
+}
+.tdSateDiv_time
+{
+    width:250px;
+    height:45px;
+    float:left;
+    font-size:22px;
+    padding-top:15px;
+    color:#5e5e5d;
+}
+.order_num
+{
+    width:300px;
+    float:left;
+    height:45px;
+    padding-top:15px;
+    font-size:22px;
+    color:#5e5e5d;
+}
+.tdSateDiv_proname
+{
+    width:550px;
+    height:53px;
+    float:left;
+    text-align:left;
+    padding-top:24px;
+    padding-left:30px;
+    float:left;
+}
+.count
+{
+    font-size:24px;
+    color:#393a3a;
+}
+.price
+{
+    font-size:28px;
+    color:#f94109;
+}
+.tdSateDiv_state
+{
+    width:550px;
+    height:66px;
+    float:left;
+    border-bottom:1px solid rgb(200,200,200);
+    text-align:left;
+    padding-left:30px;
+    padding-top:7px;
+    font-family:微软雅黑;
+    font-size:18px;
+}
+.tdSateDiv_bt
+{
+    width:580px;
+    height:55px;
+    text-align:right;
+    float:left;
+    padding-top:15px;
+}
+.btSubmit
+{
+    width:160px;
+    height:60px;
+    border:0px;
+    background-image:url(../img/order_2.png);
+}

@@ -11,10 +11,9 @@ function test(obj) {
 
     if (window.confirm('你确定要将地址改为' + arr[0].replace(/[ ]/g, "") + '吗?')) {
         //alert("确定");
-        location.href = 'index.aspx?shopName=' + arr[0].replace(/[ ]/g, "");
+        location.href = 'index.aspx?shopName=' + arr[0].replace(/[ ]/g, "") + '&Latitude=' + $("#nowLatitudes").val() + '&Longitude=' + $("#nowLongitudes").val();
     } else {
         //alert("取消");
         obj.style.backgroundColor = 'white';
     }
-    alert('test');
 }

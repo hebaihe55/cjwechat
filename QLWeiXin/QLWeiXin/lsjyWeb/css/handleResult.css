@@ -1,0 +1,271 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+    font-family:微软雅黑;
+    text-decoration:none;
+}
+.bodys
+{
+    width:100%;
+}
+.backgrounds
+{
+    width:640px;
+    height:1030px;
+}
+.title_name
+{
+    width:640px;
+    height:80px;
+    float:left;
+    background-color:#5f9f3f;
+}
+#title_name_ico
+{
+    width:60px;
+    height:60px;
+    float:left;
+    text-align:left;
+    text-align:center;
+    padding-top:20px;
+}
+#title_name_font
+{
+    width:560px;
+    height:65x;
+    text-align:center;
+    font-size:36px;
+    font-family:微软雅黑;
+    padding-top:15px;
+    color:White;
+    padding-right:20px;
+}
+#order
+{
+    width:610px;
+    height:100px;
+    text-align:left;
+    padding-left:30px;
+    font-size:26px;
+    float:left;
+    padding-top:10px;
+    color:rgb(100,100,100);
+}
+#confirm_price
+{
+    width:640px;
+    height:150px;
+    float:left;
+    text-align:center;
+    font-size:58px;
+    color:#fc5f2e;
+}
+#payment
+{
+    width:640px;
+    height:140px;
+    float:left;
+    border-bottom:1px solid rgb(200,200,200);
+    border-top:1px solid rgb(200,200,200);
+}
+#confirm_title
+{
+    width:290px;
+    float:left;
+    height:140px;
+    text-align:left;
+    padding-left:30px;
+    line-height:70px;
+    font-size:26px;
+    color:#9c9c96;
+}
+#confirm_titleName
+{
+    width:290px;
+    height:140px;
+    float:left;
+    text-align:right;
+    padding-right:30px;
+    line-height:70px;
+    font-size:26px;
+    color:#3d3c3c;
+}
+#confirm_submit
+{
+    width:640px;
+    height:80px;
+    float:left;
+    text-align:center;
+}
+#confirm_submitBt
+{
+    width:580px;
+    height:80px;
+    border:0px;
+    background-image:url(../img/button_immediatelypay.png);
+    margin-top:40px;
+}
+#success_ok
+{
+    width:640px;
+    height:300px;
+    float:left;
+    font-size:36px;
+    font-family:微软雅黑;
+    padding-top:72px;
+    line-height:110px;
+    color:Gray;
+}
+#success_bt
+{
+    width:640px;
+    height:80px;
+    float:left;
+    margin-top:110px;
+}
+#success_submit
+{
+    width:580px;
+    height:80px;
+    background-image:url(../img/button_completepaymeng.png);
+}
+#custom_content
+{
+    width:600px;
+    height:600px;
+    float:left;
+    text-align:left;
+    font-size:28px;
+    line-height:70px;
+    padding-left:40px;
+    color:#676767;
+    margin-top:10px;
+}
+#custom_gray
+{
+    width:640px;
+    height:480px;
+    float:left;
+    background-color:rgb(220,220,220);
+    background-image:url(../img/640-480.jpg);
+    
+}
+#txtDiv
+{
+	width:640px;
+	height:80px;
+	float:left;
+	margin-top:150px;
+	text-align:center;
+}
+#txtDiv_content
+{
+	width:580px;
+	height:70px;
+	border-bottom:1px solid gray;
+	color:#000;
+	margin-left:30px;
+}
+#img_ico
+{
+	width:60px;
+	height:45px;
+	float:left;
+	padding-top:15px;
+	color:#878282;
+}
+#cellphone
+{
+	width:400px;
+	height:55px;
+	float:left;
+	padding-top:5px;
+}
+#cell_txt
+{
+	width:380px;
+	height:50px;
+	border:0px;
+	background-color:transparent;
+	font-size:36px;
+	font-family:微软雅黑;
+}
+#reg_send
+{
+    width:640px;
+    height:90px;
+    text-align:center;
+    float:left;
+    margin-top:70px;
+}
+#reg_send_submit
+{
+    width:520px;
+    height:80px;
+    background-image:url(../img/button_obtain.png.png);
+    border:0px;
+}
+
+#reg_send_submit
+{
+    width:520px;
+    height:80px;
+    background-image:url(../img/button_obtain.png.png);
+    border:0px;
+}
+#regb_txt_count
+{
+    width:640px;
+    height:280px;
+    float:left;
+    margin-top:120px;
+}
+.regb_txt_div
+{
+    width:600px;
+    height:80px;
+    margin-top:10px;
+    border-bottom:1px solid gray;
+}
+.regb_txtbox
+{
+    width:580px;
+    height:70px;
+    border:0px;
+    font-family:微软雅黑;
+    font-size:30px;
+    background-color:transparent;
+}
+#bt
+{
+    width:640px;
+    height:200px;
+    float:left;
+    margin-top:40px;
+}
+.bt_div
+{
+    width:640px;
+    height:80px;
+    float:left;
+    margin-top:15px;
+    text-align:center;
+}
+#regBt
+{
+    background-image:url(../img/button_changepassword.png);
+    border:0px;
+    width:520px;
+    height:80px;
+}
+#repeatBt
+{
+    background-image:url(../img/bouutn_duoshaomiao.png);
+    border:0px;
+    width:520px;
+    height:80px;
+    color:Black;
+    font-size:30px;
+    color:#639834;
+}

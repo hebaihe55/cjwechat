@@ -20,21 +20,23 @@
             </div>
             <div id="regb_txt_count">
                 <div class="regb_txt_div">
-                    <asp:TextBox runat="server" class="regb_txtbox" placeholder="请输入验证码"></asp:TextBox>
+                    <asp:TextBox runat="server" class="regb_txtbox" placeholder="请输入验证码" ID="code"></asp:TextBox>
                 </div>
                 <div class="regb_txt_div">
-                    <asp:TextBox runat="server" class="regb_txtbox" placeholder="请输入密码（6-16位字符或字符+数字）"></asp:TextBox>
+                    <asp:TextBox runat="server" ID="pwd"  class="regb_txtbox" 
+                        placeholder="请输入密码（6-16位字符或字符+数字）" TextMode="Password"></asp:TextBox>
                 </div>
                 <div class="regb_txt_div">
-                    <asp:TextBox runat="server" class="regb_txtbox" placeholder="确认密码"></asp:TextBox>
+                    <asp:TextBox runat="server" ID="repwd" class="regb_txtbox" placeholder="确认密码" 
+                        TextMode="Password"></asp:TextBox>
                 </div>
             </div>
             <div id="bt">
                 <div class="bt_div">
-                    <asp:Button runat="server" ID="regBt" Text="" />
+                    <asp:Button runat="server" ID="regBt" Text="" onclick="regBt_Click" />
                 </div>
                 <div class="bt_div">
-                    <asp:Button runat="server" ID="repeatBt" Text="" />
+                    <asp:Button runat="server" ID="repeatBt" Text="" onclick="repeatBt_Click" />
                 </div>
             </div>
         </div>

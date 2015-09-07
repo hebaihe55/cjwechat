@@ -1,0 +1,126 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+    font-family:微软雅黑;
+    text-decoration:none;
+}
+.bodys
+{
+    width:100%;
+}
+.backgrounds
+{
+    width:640px;
+    height:1030px;
+    background-color:White;
+}
+.title_name
+{
+    width:640px;
+    height:80px;
+    float:left;
+    background-color:#5f9f3f;
+}
+#title_name_ico
+{
+    width:60px;
+    height:60px;
+    float:left;
+    text-align:left;
+    text-align:center;
+    padding-top:20px;
+}
+#title_name_font
+{
+    width:560px;
+    height:65x;
+    text-align:center;
+    font-size:36px;
+    font-family:微软雅黑;
+    padding-top:15px;
+    color:White;
+    padding-right:20px;
+}
+#wrapper 
+{
+    width:640px;
+    height:950px;
+    float:left;
+	overflow: hidden;
+}
+
+#scroller {
+	position:relative;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 640px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.gray_title
+{
+    height:60px;
+    font-size:24px;
+    color:#969595;
+}
+.left_same
+{
+    width:370px;
+    font-size:28px;
+    color:#7a7a7a;
+    background-color:White;
+    height:80px;
+    padding-left:30px;
+}
+.same
+{
+    text-align:right;
+    color:#313030;
+    font-size:28px;
+    width:210px;
+    background-color:White;
+    padding-right:30px;
+}
+table
+{
+    background-color:White;
+}
+.xian
+{
+    width:580px;
+    border:1px solid rgb(200,200,200);
+}
+.gray_title
+{
+    width:640px;
+    height:60px;
+    float:left;
+    background-color:rgb(200,200,200);
+}
+.gray_title_left
+{
+    width:320px;
+    height:60px;
+}
+.chanpin
+{
+    width:180px;
+    height:104px;
+    font-size:28px;
+    color:#7a7a7a;
+    padding-left:30px;
+}

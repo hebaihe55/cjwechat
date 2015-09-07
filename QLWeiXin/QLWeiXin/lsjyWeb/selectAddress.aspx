@@ -5,27 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>绿色家园</title>
+    <script src="js/suit.js" type="text/javascript"></script>
     <script src="js/scroll.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/selectAddress.js" type="text/javascript"></script>
     <link href="css/selectAddress.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <script>
-        var _width = parseInt(window.screen.width);
-        var scale = _width / 640;
-        var ua = navigator.userAgent.toLowerCase();
-        var result = /android (\d+\.\d+)/.exec(ua);
-        if (result) {
-            var version = parseFloat(result[1]);
-            if (version > 2.3) {
-                document.write('<meta name="viewport" content="width=640, minimum-scale = ' + scale + ', maximum-scale = ' + scale + ', target-densitydpi=device-dpi">');
-            } else {
-                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
-            }
-        } else {
-            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
-        }
-    </script>
 </head>
 <body onload="loaded()">
     <form id="form1" runat="server">

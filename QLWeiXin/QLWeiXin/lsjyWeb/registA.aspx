@@ -21,6 +21,42 @@
         } else {
             document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
         }
+
+        function CheckMobile() {
+
+           
+            var mobile = $("#cell_txt").val();
+           
+            if (mobile == '' || mobile.length !=  11) {
+                alert("请输入正确手机号！");
+                return false;
+            }
+
+
+//            $.post('api.aspx', { action: 'IsUserValidatePhone', phone: mobile }, function (data) {
+
+//                if (data.code == "0") {
+//                    $("#ischeck").val() = 0;
+//                    alert("您的手机号已被注册过!");
+//                    return false;
+//                }
+//                else {
+//                    $("#ischeck").val() = 1000;
+//                
+//                }
+
+//            },
+//  "json"
+
+//  );
+
+            return true;
+
+        
+
+        
+        }
+
     </script>
 </head>
 <body>
@@ -43,8 +79,12 @@
                 </div>
             </div>
             <div id="reg_send">
-            <input type="button" id="reg_send_submit" />
+           
             
+            <asp:Button
+                ID="reg_send_submit" runat="server" Text="" 
+                    OnClientClick="return CheckMobile();" onclick="reg_send_submit_Click" />
+                <input id="ischeck" type="hidden" runat="server" value="0" />
             </div>
         </div>
     </div>

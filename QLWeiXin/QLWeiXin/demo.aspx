@@ -5,27 +5,15 @@
 <head runat="server">
     <title></title>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="lsjyWeb/js/JScript1.js" type="text/javascript"></script>
+    <link href="lsjyWeb/css/index.css" rel="stylesheet" type="text/css" />
     <script>
-        function aa(obj) {
-            obj.parentElement.children[1].style.display = 'none';
-            
-        }
-    
+        
     </script>
 </head>
 <body onload="loaded()">
     <form id="form1" runat="server">
-    <div id="gg">
-        <div id="bb">
-            asdasd
-        </div>
-        <div id="aa">
-            asd
-        </div>
-        <div id="cc" onclick="aa(this)">
-            dfgdfg
-        </div>
-    </div>
+    
     </form>
 </body>
 </html>

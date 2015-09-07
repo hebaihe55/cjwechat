@@ -24,3 +24,7 @@ C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\bin\QLWeiXin.dll
 C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\bin\QLWeiXin.pdb
 C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.dll
 C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.pdb
+C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\bin\Newtonsoft.Json.dll
+C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\bin\Newtonsoft.Json.pdb
+C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\bin\Newtonsoft.Json.xml
+C:\work\水果\github\cjwechat\QLWeiXin\QLWeiXin\obj\Debug\QLWeiXin.csprojResolveAssemblyReference.cache

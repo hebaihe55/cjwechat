@@ -9,9 +9,54 @@ using System.Net;
 using System.Text;
 using System.Data;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace QLWeiXin
 {
+
+
+
+
+    public class baidu
+    {
+
+
+        public string status { get; set; }
+        public string total { get; set; }
+        public string size { get; set; }
+        public object contents { get; set; }
+
+    
+    }
+
+    public class content
+    {
+
+
+        public string tags { get; set; }
+        public string uid { get; set; }
+        public string province { get; set; }
+        public string geotable_id { get; set; }
+        public string modify_time { get; set; }
+        public string district { get; set; }
+        public string create_time { get; set; }
+        public string city { get; set; }
+        public string[] location { get; set; }
+        public string mch_id { get; set; }
+        public string address { get; set; }
+        public string title { get; set; }
+        public string coord_type { get; set; }
+        public string type { get; set; }
+        public string distance { get; set; }
+        public string weight { get; set; }
+
+    }
+    
+    
+    
+    
     public partial class demo : System.Web.UI.Page
     {
         DataTable dt1;
@@ -19,24 +64,26 @@ namespace QLWeiXin
         {
 
 
-            /*
-            string BaidujsonGet = publicClass.requestGet("http://api.map.baidu.com/geosearch/v3/nearby?ak=wZPaui15nEeP3nDlFTaBckSl&geotable_id=111944&location=121.42407510639893,31.23608370022221&radius=2000000&sortby=distance:1");
-            BaidujsonGet = BaidujsonGet.Replace(" ", "");
-            BaidujsonGet = BaidujsonGet.Replace("{", "*");
-            BaidujsonGet = BaidujsonGet.Replace(",", "*");
-            BaidujsonGet = BaidujsonGet.Replace("}", "*");
-            BaidujsonGet = BaidujsonGet.Replace("[", "*");
-            BaidujsonGet = BaidujsonGet.Replace("]", "*");
-            BaidujsonGet = BaidujsonGet.Replace(":", "*");
-            BaidujsonGet = BaidujsonGet.Replace("\"", "*");
-            BaidujsonGet = BaidujsonGet.Replace("***", "*");
-            BaidujsonGet = BaidujsonGet.Replace("**", "*");
-            string[] BaiduJsonGet = BaidujsonGet.Split('*');
-            Response.Write(BaiduJsonGet[31].ToString() + BaiduJsonGet[29].ToString());
 
-            */
+            string BaidujsonGet = publicClass.requestGet("http://api.map.baidu.com/geosearch/v3/nearby?ak=wZPaui15nEeP3nDlFTaBckSl&geotable_id=111944&location=121.42407510639893,31.23608370022221&radius=2000000&sortby=distance:1");
+            baidu db = new baidu();
+       db=    JsonHelper.DeserializeJsonToObject<baidu>(BaidujsonGet);
+
+
+        List<content> userAddresss = JsonHelper.DeserializeJsonToList<content>(db.contents.ToString());
+
+        string a = userAddresss[0].address;
+
+
+
             
         }
+
+
+
+
+
+
         protected string RequestUrl(string url, string value)
         {
             //建立WebRequest对象，url目标地址
