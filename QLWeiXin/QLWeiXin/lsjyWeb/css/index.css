@@ -251,7 +251,9 @@
 {
     width:457px;
     height:950px;
-	overflow: hidden;
+    overflow:scroll;
+    
+	
 }
 
 #scroller {

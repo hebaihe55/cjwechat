@@ -10,16 +10,60 @@
     <script src="js/position.js" type="text/javascript"></script>
     <script src="js/dong.js" type="text/javascript"></script>
     <title>绿色家园</title>
+    <script>
 
+        function GetGoodsListByCategory() {
+
+
+
+            $.post('api.aspx', { action: "GetGoodsListByCategory", cid: $('#acid').val() }, function (data) {
+
+                $("#pro_1").html('');
+
+                $.each(data.list, function (i, item) {
+
+                    $("#pro_1").append("<tr><td ><div class='cover' style='background-image:url(" + item.img +
+                     ")'><div class='pro_name'>" + item.name +
+                      "</div><div class='pro_component'>" +
+                      item.integral + "</div><div class='pro_price'>￥<font style='font-size: 36px;'><label class='once_price'>" +
+                      item.price + "</label></font> </div> </div></td></tr><tr>");
+
+
+
+
+
+
+
+                });
+
+                $("#pro_1").append("<td style='height:80px;background:white'></td></tr>");
+
+            },
+            "json"
+    );
+        
+        }
+
+        function subgo(id) {
+            $('#acid').val(id);
+            GetGoodsListByCategory();
+        }
+
+        $(document).ready(function () {
+
+            
+            GetGoodsListByCategory();
+
+        
+
+
+        });
+    
+    </script>
 
 </head>
 <body onload="loaded()">
     <form id="form1" runat="server">
-
-    
-  
-
-
     <asp:Label runat="server" Text="" ID="address_info" Style="display: none"></asp:Label>
     <input type="text" runat="server" id="nowLatitudes" style="display: none" />
     <input type="text" runat="server" id="nowLongitudes" style="display: none" />
@@ -53,156 +97,13 @@
                     <div id="wrapper">
                         <div id="scroller">
                             <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_1">
-                             <% foreach (QLWeiXin.Code.productList pl in p1)
-                                { %>
-                             
-                                
-                                <tr>
-                                    <td >
-                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
-                                            <div class="pro_name">
-                                                 <%= pl.name %>
-                                            </div>
-                                            <div class="pro_component">
-                                                <%= pl.integral%>
-                                            </div>
-                                            <div class="pro_price">
-                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
-                                            </div>
-                                            <div class="buttons">
-                                         
-                                               <div class="jia" onclick="funJia(this)">
-                                                </div>
-                                                <div class="innerCount">
-                                                    1
-                                                </div>
-                                                <div class="jian">
-                                                </div>
+                               
+                                          
 
-                                               
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
                              
-                             <%} %>
-
                             </table>
 
-                               <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_2">
-                             <% foreach (QLWeiXin.Code.productList pl in p2)
-                                { %>
-                             
-                                
-                                <tr>
-                                    <td >
-                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
-                                            <div class="pro_name">
-                                                 <%= pl.name %>
-                                            </div>
-                                            <div class="pro_component">
-                                                <%= pl.integral%>
-                                            </div>
-                                            <div class="pro_price">
-                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
-                                            </div>
-                                            <div class="buttons">
-                                         
-                                               <div class="jia" onclick="funJia(this)">
-                                                </div>
-                                                <div class="innerCount">
-                                                    1
-                                                </div>
-                                                <div class="jian">
-                                                </div>
-
-                                               
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                             
-                             <%} %>
-
-                            </table>
-                             <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_3">
-                             <% foreach (QLWeiXin.Code.productList pl in p3)
-                                { %>
-                             
-                                
-                                <tr>
-                                    <td >
-                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
-                                            <div class="pro_name">
-                                                 <%= pl.name %>
-                                            </div>
-                                            <div class="pro_component">
-                                                <%= pl.integral%>
-                                            </div>
-                                            <div class="pro_price">
-                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
-                                            </div>
-                                            <div class="buttons">
-                                         
-                                                    <div class="jia" onclick="funJia(this)">
-                                                </div>
-                                                <div class="innerCount">
-                                                    1
-                                                </div>
-                                                <div class="jian">
-                                                </div>
-
-                                               
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                             
-                             <%} %>
-
-                            </table>
-                             <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_4">
-                             <% foreach (QLWeiXin.Code.productList pl in p4)
-                                { %>
-                             
-                                
-                                <tr>
-                                    <td >
-                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
-                                            <div class="pro_name">
-                                                 <%= pl.name %>
-                                            </div>
-                                            <div class="pro_component">
-                                                <%= pl.integral%>
-                                            </div>
-                                            <div class="pro_price">
-                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
-                                            </div>
-                                            <div class="buttons">
-                                         
-                                                    <div class="jia" onclick="funJia(this)">
-                                                </div>
-                                                <div class="innerCount">
-                                                    1
-                                                </div>
-                                                <div class="jian">
-                                                </div>
-
-                                               
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                             
-                             <%} %>
-
-                            </table>
-                           
-
-
-
-
-                           
+                            
 
 
 
@@ -283,7 +184,6 @@
             </div>
         </div>
     </div>
-   
     </form>
 </body>
 </html>

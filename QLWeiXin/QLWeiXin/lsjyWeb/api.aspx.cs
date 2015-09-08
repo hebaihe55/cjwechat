@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using QLWeiXin.Code;
 
 namespace QLWeiXin.lsjyWeb
 {
@@ -17,8 +18,42 @@ namespace QLWeiXin.lsjyWeb
                     Response.Write(GetIsUserValidatePhone(Request.Form["Phone"].ToString()));
 
                 }
+                else if (Request.Form["action"].ToString() == "GetGoodsListByCategory")
+                {
+                    GetGoodsListByCategory();
+                }
             
         }
+
+        protected void GetGoodsListByCategory()
+        {
+
+
+            string url = "http://120.27.45.83:8082/api/Mall/GetGoodsListByCategory";
+
+            string para = "start=0&limit=100&type=" + Request.Form["cid"].ToString();
+
+
+
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+
+            Response.Write( resp.data.ToString());
+
+
+
+
+          
+
+        }
+
+
+
+
 
 
         public string GetIsUserValidatePhone(string mobile)

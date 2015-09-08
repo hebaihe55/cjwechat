@@ -11,12 +11,6 @@ namespace QLWeiXin.lsjyWeb
     public partial class index : System.Web.UI.Page
     {
 
-     public   List<productList> p1 = null;
-
-
-     public List<productList> p2 = null;
-     public List<productList> p3 = null;
-     public List<productList> p4 = null;
         private string cid = "";
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -39,28 +33,18 @@ namespace QLWeiXin.lsjyWeb
                 this.shop_name.Text = Request.QueryString["shopName"].ToString();
             }
 
-
-
             if (!IsPostBack)
             {
 
                 bindRP1();
 
                
-     
-
-                bindRP3();
+                
+           
 
 
 
             }
-
-
-            p1 = bindRP2("34");
-            p2 = bindRP2("31");
-            p3 = bindRP2("18");
-            p4 = bindRP2("32");
-
         }
 
 
@@ -107,49 +91,17 @@ namespace QLWeiXin.lsjyWeb
 
         }
 
-        protected List<productList> bindRP2(string cid)
-        {
-
-
-            string url = "http://120.27.45.83:8082/api/Mall/GetGoodsListByCategory";
-
-            string para = "start=0&limit=100&type="+cid; 
-
-            
-
-
-            resp resp = new resp();
-
-
-            resp = QLWeiXin.Code.Util.GetResp(url, para);
-
-
-           return JsonHelper.DeserializeJsonToList<productList>(JsonHelper.DeserializeJsonToObject<productInfo>(resp.data.ToString()).list.ToString());
-
-       
-
-
-
-        }
-
-
-
-
-      
-
-
-
-
-    
 
 
 
 
 
+        
 
 
 
-  
+
+
 
 
 
