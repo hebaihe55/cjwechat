@@ -38,13 +38,13 @@ namespace QLWeiXin.lsjyWeb
 
             if (resp.code == 1000)
             {
-                Response.Write("<script>alert('修改地址成功')</script>");
+                Response.Write("<script>alert('修改地址成功');local.href='addressManage.aspx'</script>");
 
 
             }
             else
             {
-                Response.Write("<script>alert('修改地址失败')</script>");
+                Response.Write("<script>alert('修改地址失败');local.href='addressManage.aspx'</script>");
             }
         }
 

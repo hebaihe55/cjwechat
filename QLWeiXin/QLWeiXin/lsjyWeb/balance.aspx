@@ -36,10 +36,17 @@
                             <td>
                                 <div id="balance_address">
                                     <div id="balance_address_userinfo">
-                                        某某 13917483303
+                                        <asp:Label 
+                                            ID="name" runat="server" Text="某                                 
+                                        
+                                        某">
+                                        
+                                        
+                                        </asp:Label> <asp:Label ID="mobile" runat="server" Text="13917483303"></asp:Label> 
                                     </div>
                                     <div id="balance_address_info">
-                                        上海市普陀区武宁路长寿路
+                                      <asp:Label ID="address" runat="server" Text="上海市普陀区武宁路长寿路"></asp:Label>
+                                        <asp:HiddenField ID="hf1" runat="server" />
                                     </div>
                                     <div class="jiantou">
                                         <img src="img/morethan.png.png" />

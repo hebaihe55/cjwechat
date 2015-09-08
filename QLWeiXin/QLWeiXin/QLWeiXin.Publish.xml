@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\Users\Administrator\Desktop\WEB" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+  <publishProfile publishUrl="C:\Users\Administrator\Desktop\WEB" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FTP" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
     <file relUrl="lsjyWeb/img/unlock icon.png.png" publishTime="08/31/2015 14:23:03" />
     <file relUrl="demo.aspx" publishTime="08/31/2015 12:01:05" />
     <file relUrl="dazhuanpan/apple.ico" publishTime="08/20/2015 02:18:48" />
@@ -14,17 +14,16 @@
     <file relUrl="lsjyWeb/img/demo_2.jpg" publishTime="08/25/2015 17:12:39" />
     <file relUrl="lsjyWeb/img/login_ico.png" publishTime="08/31/2015 11:22:06" />
     <file relUrl="dazhuanpan/rotate-static.png" publishTime="08/24/2015 13:34:20" />
-    <file relUrl="lsjyWeb/css/selectAddress.css" publishTime="08/28/2015 19:36:33" />
     <file relUrl="dazhuanpan/laodas.jpg" publishTime="08/24/2015 10:36:09" />
     <file relUrl="Global.asax" publishTime="08/13/2014 15:32:35" />
     <file relUrl="lsjyWeb/registA.aspx" publishTime="08/31/2015 20:59:54" />
-    <file relUrl="lsjyWeb/js/position.js" publishTime="08/26/2015 15:46:27" />
+    <file relUrl="lsjyWeb/img/button_registered.png.png" publishTime="08/31/2015 14:23:03" />
     <file relUrl="lsjyWeb/img/pos.png" publishTime="08/27/2015 11:32:53" />
     <file relUrl="dazhuanpan/jQueryRotate.2.2.js" publishTime="08/11/2015 17:21:56" />
-    <file relUrl="lsjyWeb/img/button_registered.png.png" publishTime="08/31/2015 14:23:03" />
     <file relUrl="lsjyWeb/img/demo_1.jpg" publishTime="08/25/2015 17:11:04" />
     <file relUrl="dazhuanpan/ly-plate.png" publishTime="08/24/2015 13:35:04" />
     <file relUrl="dazhuanpan/wechat.js" publishTime="08/15/2015 15:40:56" />
+    <file relUrl="lsjyWeb/img/input_box.png.png" publishTime="08/31/2015 14:34:29" />
     <file relUrl="lsjyWeb/js/selectAddress.js" publishTime="08/28/2015 20:24:15" />
     <file relUrl="lsjyWeb/img/map.png" publishTime="08/26/2015 15:03:38" />
     <file relUrl="lsjyWeb/img/count.png" publishTime="08/25/2015 15:32:30" />
@@ -33,6 +32,7 @@
     <file relUrl="lsjyWeb/js/scroll.js" publishTime="08/28/2015 23:05:06" />
     <file relUrl="lsjyWeb/img/usernameicon.png.png" publishTime="08/31/2015 14:23:03" />
     <file relUrl="lsjyWeb/img/minus.png" publishTime="08/25/2015 15:33:35" />
+    <file relUrl="lsjyWeb/img/person_txt.png" publishTime="08/31/2015 13:34:54" />
     <file relUrl="bin/QLWeiXin.pdb" publishTime="08/31/2015 21:48:09" />
     <file relUrl="lsjyWeb/img/person_man.png" publishTime="08/31/2015 13:34:54" />
     <file relUrl="lsjyWeb/img/person_tel.png" publishTime="08/31/2015 13:34:54" />
@@ -41,7 +41,7 @@
     <file relUrl="dazhuanpan/click.png" publishTime="08/24/2015 16:06:17" />
     <file relUrl="lsjyWeb/img/button_registee.png.png" publishTime="08/31/2015 21:47:04" />
     <file relUrl="lsjyWeb/img/add.png" publishTime="08/25/2015 15:32:30" />
-    <file relUrl="lsjyWeb/img/input_box.png.png" publishTime="08/31/2015 14:34:29" />
+    <file relUrl="lsjyWeb/registB.aspx" publishTime="08/31/2015 21:47:26" />
     <file relUrl="lsjyWeb/js/login.js" publishTime="08/31/2015 19:59:24" />
     <file relUrl="lsjyWeb/img/laodas.jpg" publishTime="08/24/2015 18:00:43" />
     <file relUrl="lsjyWeb/img/loginbutton.png.png" publishTime="08/31/2015 14:23:03" />
@@ -50,15 +50,15 @@
     <file relUrl="lsjyWeb/img/arrow.png" publishTime="08/25/2015 15:32:30" />
     <file relUrl="lsjyWeb/img/button_verificationcode.png.png" publishTime="08/31/2015 21:47:05" />
     <file relUrl="lsjyWeb/css/regist.css" publishTime="08/31/2015 21:48:35" />
-    <file relUrl="lsjyWeb/img/person_txt.png" publishTime="08/31/2015 13:34:54" />
-    <file relUrl="lsjyWeb/selectAddress.aspx" publishTime="08/28/2015 19:46:45" />
-    <file relUrl="lsjyWeb/registB.aspx" publishTime="08/31/2015 21:47:26" />
+    <file relUrl="lsjyWeb/js/JScript1.js" publishTime="08/31/2015 12:10:16" />
+    <file relUrl="lsjyWeb/css/selectAddress.css" publishTime="08/28/2015 19:36:33" />
     <file relUrl="lsjyWeb/css/personal.css" publishTime="08/31/2015 14:01:45" />
     <file relUrl="api.aspx" publishTime="08/12/2015 10:35:19" />
     <file relUrl="dazhuanpan/jquery.easing.min.js" publishTime="08/11/2015 17:21:56" />
-    <file relUrl="lsjyWeb/js/JScript1.js" publishTime="08/31/2015 12:10:16" />
     <file relUrl="lsjyWeb/login.aspx" publishTime="08/31/2015 21:01:24" />
+    <file relUrl="lsjyWeb/selectAddress.aspx" publishTime="08/28/2015 19:46:45" />
     <file relUrl="lsjyWeb/js/pos.ashx" publishTime="08/26/2015 19:00:28" />
+    <file relUrl="lsjyWeb/js/position.js" publishTime="08/26/2015 15:46:27" />
     <file relUrl="lsjyWeb/img/return_button.png" publishTime="08/27/2015 11:32:53" />
     <file relUrl="dazhuanpan/2.jpg" publishTime="08/12/2015 11:20:41" />
     <file relUrl="lsjyWeb/img/go_sale.png" publishTime="08/25/2015 15:33:35" />
@@ -68,4 +68,5 @@
     <file relUrl="dazhuanpan/jquery-1.7.2.min.js" publishTime="08/11/2015 17:21:56" />
     <file relUrl="lsjyWeb/index.aspx" publishTime="08/31/2015 20:06:02" />
   </publishProfile>
+  <publishProfile publishUrl="ftp://120.27.45.83:23" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件2" publishMethod="FTP" replaceMatchingFiles="False" userName="FTP_wechat" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqWIU1WbGTUahw/eQGzLHggAAAAACAAAAAAAQZgAAAAEAACAAAADwIUJWnz5DVqxkmV9FlSA5mQgf6obIS8kF1DAkujSr+AAAAAAOgAAAAAIAACAAAAAI/604K6BIOMRhagD6l7QD39pvsZrZsc7+5XIVEnYJ9CAAAABqHqIAidgQV00g3WAEvzIOq0teS5dnSs2aJ//Qrmxl8kAAAACxnXU7C9pnKgEbYnaRe8+z2ufCkPGEvVKarvQCJ43yaM82d1/UWSYaUFvYKYs2QZFgq+TxSiX2japr4Wfr3a2y" SelectedForPublish="True" />
 </publishData>

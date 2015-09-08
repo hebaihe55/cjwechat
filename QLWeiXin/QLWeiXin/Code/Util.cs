@@ -62,7 +62,19 @@ namespace QLWeiXin.Code
         public int totalNum { get; set; }
         public object list { get; set; }
     }
+    public class shpCarList
+    {
 
+        public string id { get; set; }
+        public int num { get; set; }
+
+        public float price { get; set; }
+        public string name { get; set; }
+        public string img { get; set; }
+        public string Integral { get; set; }
+
+
+    }
     public class productList
     {
         public int id { get; set; }

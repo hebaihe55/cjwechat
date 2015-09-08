@@ -64,7 +64,7 @@ namespace QLWeiXin.lsjyWeb
                 if (resp.code == 1000)
                 {
 
-                    Response.Write("<script>alert('修改密码成功')</script>");
+                    Response.Write("<script>alert('修改密码成功');local.href='personalCenter.aspx'</script>");
                 }
                 else
                 {

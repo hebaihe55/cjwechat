@@ -73,7 +73,7 @@
     color:#4C4646;
 }
 
-.menu_once a{ display:block; text-decoration:none}
+.menu_once a{ display:block; text-decoration:none; color:Black}
 
 #product
 {
@@ -288,7 +288,8 @@
     display:block; /* http://www.jb51.net */
     height:1030px;
     float:left;
-    position:relative;
+    position:fixed;
+    bottom:0;
     z-index:5;
     margin-top:-1033px;
 }

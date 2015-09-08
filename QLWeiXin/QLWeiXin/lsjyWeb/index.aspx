@@ -10,12 +10,21 @@
     <script src="js/position.js" type="text/javascript"></script>
     <script src="js/dong.js" type="text/javascript"></script>
     <title>绿色家园</title>
+
+
 </head>
 <body onload="loaded()">
     <form id="form1" runat="server">
+
+    
+  
+
+
     <asp:Label runat="server" Text="" ID="address_info" Style="display: none"></asp:Label>
     <input type="text" runat="server" id="nowLatitudes" style="display: none" />
     <input type="text" runat="server" id="nowLongitudes" style="display: none" />
+    <asp:HiddenField ID="acid" runat="server" />
+  
     <div class="bodys" align="center">
         <div class="backgrounds" align="center">
             <!-----------------------------------页头（定位）---------------------------------------->
@@ -33,7 +42,7 @@
                     <asp:Repeater ID="Repeater1" runat="server">
                <ItemTemplate>
                     <div class="menu_once" id="menu_<%# Container.ItemIndex + 1%>" >
-                     <a  href='index.aspx?cid=<%#Eval("id") %>'>  <%#Eval("name") %></a> </div>
+                     <a  href="javascript:void(0)" onclick='subgo(<%#Eval("id") %>)'><%#Eval("name") %></a>  </div>
                         </ItemTemplate>
      </asp:Repeater>
 
@@ -44,39 +53,163 @@
                     <div id="wrapper">
                         <div id="scroller">
                             <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_1">
-                                <asp:Repeater ID="Repeater2" runat="server">
-                                <ItemTemplate>
+                             <% foreach (QLWeiXin.Code.productList pl in p1)
+                                { %>
                              
                                 
                                 <tr>
-                                    <td>
-                                        <div class="cover" style='background-image:url(<%#Eval("img") %>)'>
+                                    <td >
+                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
                                             <div class="pro_name">
-                                                 <%#Eval("name") %>
+                                                 <%= pl.name %>
                                             </div>
                                             <div class="pro_component">
-                                                <%#Eval("integral")%>
+                                                <%= pl.integral%>
                                             </div>
                                             <div class="pro_price">
-                                                ￥<font style="font-size: 36px;"><label class="once_price"> <%#Eval("price")%></label></font>
+                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
                                             </div>
                                             <div class="buttons">
-                                                <div class="jia" onclick="funJia(this)">
+                                         
+                                               <div class="jia" onclick="funJia(this)">
                                                 </div>
                                                 <div class="innerCount">
-                                                    <%#Eval("name") %>
+                                                    1
                                                 </div>
                                                 <div class="jian">
                                                 </div>
+
+                                               
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
-                                   </ItemTemplate>
-                                </asp:Repeater> 
-
+                             
+                             <%} %>
 
                             </table>
+
+                               <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_2">
+                             <% foreach (QLWeiXin.Code.productList pl in p2)
+                                { %>
+                             
+                                
+                                <tr>
+                                    <td >
+                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
+                                            <div class="pro_name">
+                                                 <%= pl.name %>
+                                            </div>
+                                            <div class="pro_component">
+                                                <%= pl.integral%>
+                                            </div>
+                                            <div class="pro_price">
+                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
+                                            </div>
+                                            <div class="buttons">
+                                         
+                                               <div class="jia" onclick="funJia(this)">
+                                                </div>
+                                                <div class="innerCount">
+                                                    1
+                                                </div>
+                                                <div class="jian">
+                                                </div>
+
+                                               
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                             
+                             <%} %>
+
+                            </table>
+                             <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_3">
+                             <% foreach (QLWeiXin.Code.productList pl in p3)
+                                { %>
+                             
+                                
+                                <tr>
+                                    <td >
+                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
+                                            <div class="pro_name">
+                                                 <%= pl.name %>
+                                            </div>
+                                            <div class="pro_component">
+                                                <%= pl.integral%>
+                                            </div>
+                                            <div class="pro_price">
+                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
+                                            </div>
+                                            <div class="buttons">
+                                         
+                                                    <div class="jia" onclick="funJia(this)">
+                                                </div>
+                                                <div class="innerCount">
+                                                    1
+                                                </div>
+                                                <div class="jian">
+                                                </div>
+
+                                               
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                             
+                             <%} %>
+
+                            </table>
+                             <table cellpadding="0" cellspacing="0" border="0" width="457" id="pro_4">
+                             <% foreach (QLWeiXin.Code.productList pl in p4)
+                                { %>
+                             
+                                
+                                <tr>
+                                    <td >
+                                        <div class="cover" style='background-image:url( <%= pl.img %>)'>
+                                            <div class="pro_name">
+                                                 <%= pl.name %>
+                                            </div>
+                                            <div class="pro_component">
+                                                <%= pl.integral%>
+                                            </div>
+                                            <div class="pro_price">
+                                                ￥<font style="font-size: 36px;"><label class="once_price">   <%= pl.price%></label></font>
+                                            </div>
+                                            <div class="buttons">
+                                         
+                                                    <div class="jia" onclick="funJia(this)">
+                                                </div>
+                                                <div class="innerCount">
+                                                    1
+                                                </div>
+                                                <div class="jian">
+                                                </div>
+
+                                               
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                             
+                             <%} %>
+
+                            </table>
+                           
+
+
+
+
+                           
+
+
+
+
+
+
+
                           
                         </div>
                     </div>
@@ -88,27 +221,48 @@
                     <div id="footer_content">
                         <table width="580" border="0">
                             <!--弹出的购物车-->
-                            <tr>
+                         
+                       
+
+
+                            <asp:Repeater ID="Repeater3" runat="server" 
+                                onitemcommand="Repeater3_ItemCommand">
+                            <ItemTemplate>
+                            
+                                <tr>
                                 <td class="footer_content_left">
-                                    水果
+                                   <%#Eval("name")%>
+                                </td>
+                                    <td class="footer_content_left">
+                                    <%#Eval("price")%>
                                 </td>
                                 <td class="footer_content_right">
-                                    <img src="img/ade.png" /><label class="footer_content_font">12</label><img src="img/abe.png" />
+                                   
+                                   
+                                    <asp:ImageButton ID="ImageButn3" runat="server" ImageUrl="~/lsjyWeb/img/ade.png" CommandArgument='<%#Eval("id")%>' CommandName="deleteCar1"/>
+                                  
+                                    <asp:Label ID="Label4" runat="server" Text='<%#Eval("num")%>' class="footer_content_font"></asp:Label>
+                                     <asp:ImageButton ID="ImageBton4" runat="server" ImageUrl="~/lsjyWeb/img/abe.png" CommandArgument='<%#Eval("id")%>'  CommandName="addCar1"/>
                                 </td>
                             </tr>
+                            </ItemTemplate>
+                            </asp:Repeater>
+
+                          
+                        
                         </table>
                     </div>
                     <div id="footer_jiesuan">
                         <div class="footer_jiesuan_left">
-                            苹果29元</div>
+                         水果   <asp:Label ID="Label2" runat="server" Text=" 29"></asp:Label>  </div>
                         <div class="footer_jiesuan_right">
-                            <input type="button" id="footer_anniu" /></div>
+                          <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/lsjyWeb/img/anniu_gray.png"/></div>
                     </div>
                 </div>
                 <!--小苹果-->
                 <div id="go_sale_img">
                     <div id="go_sale_img_1">
-                        <asp:TextBox runat="server" ID="go_sale_img_1_label" ReadOnly="true"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="go_sale_img_1_label" ReadOnly="true" Text="0"></asp:TextBox>
                     </div>
                     <div id="go_sale_img_2">
                     </div>
@@ -119,14 +273,17 @@
                 <!--透明上面的东西 按钮、总价-->
                 <div id="bottom_90_sub_div">
                     <div class="footer_jiesuan_left">
-                        苹果29元</div>
+                 水果      <asp:Label ID="Label3" runat="server" Text=" 29"></asp:Label> </div>
                     <div class="footer_jiesuan_right">
-                        <input type="button" id="footer_anniu" />
+                      
+                        <asp:ImageButton ID="ImageButton5" runat="server" 
+                            ImageUrl="~/lsjyWeb/img/anniu_gray.png" onclick="ImageButton5_Click"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+   
     </form>
 </body>
 </html>

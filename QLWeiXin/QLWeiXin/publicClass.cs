@@ -36,7 +36,7 @@ namespace QLWeiXin
             string s = value;
 
             //将LoginInfo转换为byte[]格式，这里的LoginInfo应该是你要传输的数据
-            byte[] requestBytes = System.Text.Encoding.ASCII.GetBytes(s);
+            byte[] requestBytes = System.Text.Encoding.UTF8.GetBytes(s);
 
             //设置请求为POST方式,
             req.Method = "POST";

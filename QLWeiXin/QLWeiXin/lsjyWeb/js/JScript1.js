@@ -192,8 +192,8 @@ $(document).ready(function () {
         $("#menu_3").css("color", "#4C4646");
         $("#menu_4").css("color", "#4C4646");
         $("#menu_5").css("color", "#4C4646");
-        $("#pro_1").css("display", "block");
-        $("#pro_2").css("display", "none");
+        $("#pro_1").css("display", "none");
+        $("#pro_2").css("display", "block");
         $("#pro_3").css("display", "none");
         $("#pro_4").css("display", "none");
         $("#pro_5").css("display", "none");
@@ -213,9 +213,9 @@ $(document).ready(function () {
         $("#menu_3").css("backgroundColor", "#df5257");
         $("#menu_4").css("backgroundColor", "white");
         $("#menu_5").css("backgroundColor", "white");
-        $("#pro_1").css("display", "block");
+        $("#pro_1").css("display", "none");
         $("#pro_2").css("display", "none");
-        $("#pro_3").css("display", "none");
+        $("#pro_3").css("display", "block");
         $("#pro_4").css("display", "none");
         $("#pro_5").css("display", "none");
     });
@@ -234,10 +234,10 @@ $(document).ready(function () {
         $("#menu_3").css("backgroundColor", "white");
         $("#menu_4").css("backgroundColor", "#df5257");
         $("#menu_5").css("backgroundColor", "white");
-        $("#pro_1").css("display", "block");
+        $("#pro_1").css("display", "none");
         $("#pro_2").css("display", "none");
         $("#pro_3").css("display", "none");
-        $("#pro_4").css("display", "none");
+        $("#pro_4").css("display", "block");
         $("#pro_5").css("display", "none");
     });
 });
