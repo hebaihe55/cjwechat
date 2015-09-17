@@ -15,7 +15,7 @@ namespace QLWeiXin.lsjyWeb
             {
 
 
-                Response.Redirect("login.aspx");
+                Response.Redirect("../login.aspx");
             }
         }
     }

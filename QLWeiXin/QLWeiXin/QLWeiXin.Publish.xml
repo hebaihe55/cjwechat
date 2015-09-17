@@ -17,9 +17,10 @@
     <file relUrl="dazhuanpan/laodas.jpg" publishTime="08/24/2015 10:36:09" />
     <file relUrl="Global.asax" publishTime="08/13/2014 15:32:35" />
     <file relUrl="lsjyWeb/registA.aspx" publishTime="08/31/2015 20:59:54" />
-    <file relUrl="lsjyWeb/img/button_registered.png.png" publishTime="08/31/2015 14:23:03" />
+    <file relUrl="lsjyWeb/js/position.js" publishTime="08/26/2015 15:46:27" />
     <file relUrl="lsjyWeb/img/pos.png" publishTime="08/27/2015 11:32:53" />
     <file relUrl="dazhuanpan/jQueryRotate.2.2.js" publishTime="08/11/2015 17:21:56" />
+    <file relUrl="lsjyWeb/img/button_registered.png.png" publishTime="08/31/2015 14:23:03" />
     <file relUrl="lsjyWeb/img/demo_1.jpg" publishTime="08/25/2015 17:11:04" />
     <file relUrl="dazhuanpan/ly-plate.png" publishTime="08/24/2015 13:35:04" />
     <file relUrl="dazhuanpan/wechat.js" publishTime="08/15/2015 15:40:56" />
@@ -58,7 +59,6 @@
     <file relUrl="lsjyWeb/login.aspx" publishTime="08/31/2015 21:01:24" />
     <file relUrl="lsjyWeb/selectAddress.aspx" publishTime="08/28/2015 19:46:45" />
     <file relUrl="lsjyWeb/js/pos.ashx" publishTime="08/26/2015 19:00:28" />
-    <file relUrl="lsjyWeb/js/position.js" publishTime="08/26/2015 15:46:27" />
     <file relUrl="lsjyWeb/img/return_button.png" publishTime="08/27/2015 11:32:53" />
     <file relUrl="dazhuanpan/2.jpg" publishTime="08/12/2015 11:20:41" />
     <file relUrl="lsjyWeb/img/go_sale.png" publishTime="08/25/2015 15:33:35" />
@@ -68,5 +68,177 @@
     <file relUrl="dazhuanpan/jquery-1.7.2.min.js" publishTime="08/11/2015 17:21:56" />
     <file relUrl="lsjyWeb/index.aspx" publishTime="08/31/2015 20:06:02" />
   </publishProfile>
-  <publishProfile publishUrl="ftp://120.27.45.83:23" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件2" publishMethod="FTP" replaceMatchingFiles="False" userName="FTP_wechat" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqWIU1WbGTUahw/eQGzLHggAAAAACAAAAAAAQZgAAAAEAACAAAADwIUJWnz5DVqxkmV9FlSA5mQgf6obIS8kF1DAkujSr+AAAAAAOgAAAAAIAACAAAAAI/604K6BIOMRhagD6l7QD39pvsZrZsc7+5XIVEnYJ9CAAAABqHqIAidgQV00g3WAEvzIOq0teS5dnSs2aJ//Qrmxl8kAAAACxnXU7C9pnKgEbYnaRe8+z2ufCkPGEvVKarvQCJ43yaM82d1/UWSYaUFvYKYs2QZFgq+TxSiX2japr4Wfr3a2y" SelectedForPublish="True" />
+  <publishProfile publishUrl="C:\Users\hejiyuan\Desktop\WebSiteqq1" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件2" publishMethod="FileSystem" replaceMatchingFiles="False" userName="FTP_wechat" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqWIU1WbGTUahw/eQGzLHggAAAAACAAAAAAAQZgAAAAEAACAAAADwIUJWnz5DVqxkmV9FlSA5mQgf6obIS8kF1DAkujSr+AAAAAAOgAAAAAIAACAAAAAI/604K6BIOMRhagD6l7QD39pvsZrZsc7+5XIVEnYJ9CAAAABqHqIAidgQV00g3WAEvzIOq0teS5dnSs2aJ//Qrmxl8kAAAACxnXU7C9pnKgEbYnaRe8+z2ufCkPGEvVKarvQCJ43yaM82d1/UWSYaUFvYKYs2QZFgq+TxSiX2japr4Wfr3a2y" SelectedForPublish="True">
+    <file relUrl="json/WxPayAPI.dll.config" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/img/button_xuanze.png" publishTime="09/16/2015 01:47:14" />
+    <file relUrl="json/WxPayAPI.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="wepay1/Scripts/jquery-1.7.1.intellisense.js" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/img/laodas.jpg" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/alipay.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/ace.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="alipay/index.aspx" publishTime="09/13/2015 15:42:09" />
+    <file relUrl="lsjyWeb/custom.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="lsjyWeb/OrderDetails.aspx" publishTime="09/12/2015 12:50:09" />
+    <file relUrl="index.aspx" publishTime="09/16/2015 09:54:22" />
+    <file relUrl="lsjyWeb/img/loginbutton.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/index.aspx" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/qwe_10.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/js/scroll.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/js/indexMenuClick.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_changepassword.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/js/suit.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="alipay/readme.txt" publishTime="09/13/2015 15:20:13" />
+    <file relUrl="lsjyWeb/img/person_txt.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_save.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/myOrder.aspx" publishTime="09/16/2015 02:01:11" />
+    <file relUrl="wepay1/RefundPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/js/login.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/i_look.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_completepaymeng.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/jquery-1.7.2.min.js" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/balance.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="bin/QLWeiXin.dll" publishTime="09/17/2015 07:59:18" />
+    <file relUrl="lsjyWeb/img/logo icon.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="09/03/2015 09:41:02" />
+    <file relUrl="lsjyWeb/img/unlock icon.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="json/QuickMark.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/img/ring.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_verificationcode.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/js/JScript1.js" publishTime="09/16/2015 13:25:25" />
+    <file relUrl="bin/LitJson.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/img/xiaopingguo_08.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/return_button.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/wechat.js" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/button_zhuce.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/abe.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/demo_1.jpg" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/jQueryRotate.2.2.js" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/add.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="json/Newtonsoft.Json.pdb" publishTime="09/03/2015 09:41:02" />
+    <file relUrl="wepay1/MicroPayPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/img/count.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/map.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/cn.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="wepay1/RefundQueryPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/img/minus.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="json/ThoughtWorks.QRCode.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="dazhuanpan/2.jpg" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="Global.asax" publishTime="09/06/2015 20:58:38" />
+    <file relUrl="lsjyWeb/img/morethan.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/js/position.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="Web.config" publishTime="09/17/2015 07:59:26" />
+    <file relUrl="wepay1/NativeNotifyPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/js/indexToBalance.ashx" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/logo.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/fail.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="lsjyWeb/img/person_man.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_zhif2.png" publishTime="09/16/2015 01:47:14" />
+    <file relUrl="lsjyWeb/css/login.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="09/03/2015 09:41:02" />
+    <file relUrl="lsjyWeb/img/demo_2.jpg" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/efg_10.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="updatePass.aspx" publishTime="09/16/2015 11:04:38" />
+    <file relUrl="lsjyWeb/js/dong.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="updatePassB.aspx" publishTime="09/16/2015 11:04:45" />
+    <file relUrl="lsjyWeb/img/login_ico.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="bin/QLWeiXin.pdb" publishTime="09/17/2015 07:59:18" />
+    <file relUrl="lsjyWeb/img/personal_posi.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/confirm.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="wepay1/ProductPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="dazhuanpan/contents.aspx" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/person_tel.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/laodas.jpg" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/button_registered.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_registee.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/updateAddress.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="lsjyWeb/img/640-480.jpg" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/qw_10.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/css/SinceSome.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/jquery.easing.min.js" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="dazhuanpan/ly-plate.png" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="wepay1/DownloadBillpage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/js/personCenter.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="json/LitJson.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/img/circle.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/css/personal.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/newAddress.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="wepay1/JsApiPayPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/address2.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="indexHandler.ashx" publishTime="09/15/2015 20:57:31" />
+    <file relUrl="lsjyWeb/img/icon_dinwei.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/css/balance.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/bj.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_immediatelypay.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="bin/ThoughtWorks.QRCode.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/img/button_weixing.png" publishTime="09/16/2015 01:47:14" />
+    <file relUrl="registB.aspx" publishTime="09/16/2015 11:05:00" />
+    <file relUrl="lsjyWeb/img/ade.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/js/pos.ashx" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/yuan_10.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="alipay/log/log.txt" publishTime="09/13/2015 15:18:39" />
+    <file relUrl="wepay1/Scripts/jquery-1.7.1.min.js" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/css/myOrder.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="alipay/return_url.aspx" publishTime="09/13/2015 15:20:53" />
+    <file relUrl="wepay1/NativePayPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/css/selectAddress.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/beijing.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/num.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/js/balance.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="json/RestSharp.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="json/Newtonsoft.Json.xml" publishTime="09/03/2015 09:41:02" />
+    <file relUrl="json/WxPayAPI.pdb" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/img/icon_paymen completion.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="wepay1/Scripts/jquery-1.7.1.js" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="bin/QuickMark.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/img/button_tianjia.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/person_like.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_qren.png" publishTime="09/16/2015 01:47:14" />
+    <file relUrl="lsjyWeb/img/anniu_gray.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/success.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="lsjyWeb/index.aspx" publishTime="09/15/2015 19:28:14" />
+    <file relUrl="lsjyWeb/personalCenter.aspx" publishTime="09/13/2015 18:00:53" />
+    <file relUrl="lsjyWeb/img/usernameicon.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/apple.ico" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/go_sale.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/wechat.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/css/OrderDetails.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/addressManage.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="lsjyWeb/img/pos.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="wepay1/OrderQueryPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="json/Newtonsoft.Json.dll" publishTime="09/03/2015 09:41:02" />
+    <file relUrl="lsjyWeb/js/identifyingCode.js" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/order_2.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="09/03/2015 09:41:02" />
+    <file relUrl="lsjyWeb/css/updateAddress.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/order_1.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/css/handleResult.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/button_finish.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/000_03.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/click.png" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/button_obtain.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/icon.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/input_box.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/fonts.png" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="lsjyWeb/img/arrow.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="login.aspx" publishTime="09/13/2015 20:12:42" />
+    <file relUrl="lsjyWeb/img/button_edit.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/img/addressbackground.png.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/address1.aspx" publishTime="09/16/2015 01:09:35" />
+    <file relUrl="lsjyWeb/selectAddress.aspx" publishTime="09/13/2015 16:54:14" />
+    <file relUrl="registA.aspx" publishTime="09/16/2015 10:16:13" />
+    <file relUrl="lsjyWeb/img/bouutn_duoshaomiao.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="bin/RestSharp.dll" publishTime="09/16/2015 14:18:41" />
+    <file relUrl="lsjyWeb/css/index.css" publishTime="09/16/2015 11:06:18" />
+    <file relUrl="lsjyWeb/js/selectAddress.js" publishTime="09/16/2015 00:04:46" />
+    <file relUrl="alipay/notify_url.aspx" publishTime="09/13/2015 15:20:22" />
+    <file relUrl="wepay1/MakeQRCode.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/address3.aspx" publishTime="09/16/2015 01:09:43" />
+    <file relUrl="lsjyWeb/api.aspx" publishTime="09/03/2015 10:43:48" />
+    <file relUrl="lsjyWeb/img/anniu_11.png" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="lsjyWeb/css/addressManage.css" publishTime="09/15/2015 19:23:37" />
+    <file relUrl="dazhuanpan/rotate-static.png" publishTime="09/01/2015 16:59:48" />
+    <file relUrl="wepay1/ResultNotifyPage.aspx" publishTime="09/16/2015 14:15:36" />
+    <file relUrl="lsjyWeb/css/regist.css" publishTime="09/15/2015 19:23:37" />
+  </publishProfile>
 </publishData>

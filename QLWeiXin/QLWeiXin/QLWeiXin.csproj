@@ -32,10 +32,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LitJson, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>json\LitJson.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickMark, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>json\QuickMark.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>json\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -52,9 +64,17 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.3990.25764, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>json\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="api.aspx" />
+    <Content Include="alipay\index.aspx" />
+    <Content Include="alipay\log\log.txt" />
+    <Content Include="alipay\notify_url.aspx" />
+    <Content Include="alipay\readme.txt" />
+    <Content Include="alipay\return_url.aspx" />
     <Content Include="dazhuanpan\2.jpg" />
     <Content Include="dazhuanpan\apple.ico" />
     <Content Include="dazhuanpan\click.png" />
@@ -68,12 +88,19 @@
     <Content Include="dazhuanpan\ly-plate.png" />
     <Content Include="dazhuanpan\rotate-static.png" />
     <Content Include="dazhuanpan\wechat.js" />
-    <Content Include="demo.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="home.aspx" />
+    <Content Include="json\LitJson.dll" />
     <Content Include="json\Newtonsoft.Json.dll" />
     <Content Include="json\Newtonsoft.Json.pdb" />
     <Content Include="json\Newtonsoft.Json.xml" />
+    <Content Include="json\QuickMark.dll" />
+    <Content Include="json\RestSharp.dll" />
+    <Content Include="json\ThoughtWorks.QRCode.dll" />
+    <Content Include="json\WxPayAPI.dll" />
+    <Content Include="json\WxPayAPI.pdb" />
+    <Content Include="lsjyWeb\address1.aspx" />
+    <Content Include="lsjyWeb\address2.aspx" />
+    <Content Include="lsjyWeb\address3.aspx" />
     <Content Include="lsjyWeb\addressManage.aspx" />
     <Content Include="lsjyWeb\api.aspx" />
     <Content Include="lsjyWeb\balance.aspx" />
@@ -81,15 +108,18 @@
     <Content Include="lsjyWeb\css\addressManage.css" />
     <Content Include="lsjyWeb\css\balance.css" />
     <Content Include="lsjyWeb\css\handleResult.css" />
+    <Content Include="lsjyWeb\css\index.css" />
     <Content Include="lsjyWeb\css\login.css" />
     <Content Include="lsjyWeb\css\myOrder.css" />
     <Content Include="lsjyWeb\css\OrderDetails.css" />
     <Content Include="lsjyWeb\css\personal.css" />
     <Content Include="lsjyWeb\css\regist.css" />
     <Content Include="lsjyWeb\css\selectAddress.css" />
+    <Content Include="lsjyWeb\css\SinceSome.css" />
     <Content Include="lsjyWeb\css\updateAddress.css" />
     <Content Include="lsjyWeb\custom.aspx" />
     <Content Include="lsjyWeb\fail.aspx" />
+    <Content Include="lsjyWeb\img\000_03.png" />
     <Content Include="lsjyWeb\img\640-480.jpg" />
     <Content Include="lsjyWeb\img\abe.png" />
     <Content Include="lsjyWeb\img\ace.png" />
@@ -110,11 +140,15 @@
     <Content Include="lsjyWeb\img\button_finish.png" />
     <Content Include="lsjyWeb\img\button_immediatelypay.png" />
     <Content Include="lsjyWeb\img\button_obtain.png.png" />
+    <Content Include="lsjyWeb\img\button_qren.png" />
     <Content Include="lsjyWeb\img\button_registee.png.png" />
     <Content Include="lsjyWeb\img\button_registered.png.png" />
     <Content Include="lsjyWeb\img\button_save.png" />
     <Content Include="lsjyWeb\img\button_tianjia.png" />
     <Content Include="lsjyWeb\img\button_verificationcode.png.png" />
+    <Content Include="lsjyWeb\img\button_weixing.png" />
+    <Content Include="lsjyWeb\img\button_xuanze.png" />
+    <Content Include="lsjyWeb\img\button_zhif2.png" />
     <Content Include="lsjyWeb\img\button_zhuce.png" />
     <Content Include="lsjyWeb\img\circle.png.png" />
     <Content Include="lsjyWeb\img\cn.png" />
@@ -124,6 +158,7 @@
     <Content Include="lsjyWeb\img\efg_10.png" />
     <Content Include="lsjyWeb\img\go_sale.png" />
     <Content Include="lsjyWeb\img\icon.png.png" />
+    <Content Include="lsjyWeb\img\icon_dinwei.png" />
     <Content Include="lsjyWeb\img\icon_paymen completion.png" />
     <Content Include="lsjyWeb\img\input_box.png.png" />
     <Content Include="lsjyWeb\img\i_look.png" />
@@ -153,39 +188,68 @@
     <Content Include="lsjyWeb\img\wechat.png.png" />
     <Content Include="lsjyWeb\img\xiaopingguo_08.png" />
     <Content Include="lsjyWeb\img\yuan_10.png" />
+    <Content Include="lsjyWeb\index.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="lsjyWeb\js\balance.js" />
     <Content Include="lsjyWeb\js\dong.js" />
     <Content Include="lsjyWeb\js\identifyingCode.js" />
+    <Content Include="lsjyWeb\js\indexMenuClick.js" />
     <Content Include="lsjyWeb\js\JScript1.js" />
     <Content Include="lsjyWeb\js\login.js" />
     <Content Include="lsjyWeb\js\personCenter.js" />
     <Content Include="lsjyWeb\js\position.js" />
+    <Content Include="lsjyWeb\js\scroll.js" />
     <Content Include="lsjyWeb\js\selectAddress.js" />
     <Content Include="lsjyWeb\js\suit.js" />
-    <Content Include="lsjyWeb\login.aspx" />
     <Content Include="lsjyWeb\myOrder.aspx" />
     <Content Include="lsjyWeb\newAddress.aspx" />
     <Content Include="lsjyWeb\OrderDetails.aspx" />
     <Content Include="lsjyWeb\personalCenter.aspx" />
-    <Content Include="lsjyWeb\registA.aspx" />
-    <Content Include="lsjyWeb\registB.aspx" />
+    <Content Include="registA.aspx" />
     <Content Include="lsjyWeb\selectAddress.aspx" />
-    <Content Include="lsjyWeb\js\scroll.js" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="wepay1\DownloadBillpage.aspx" />
+    <Content Include="wepay1\JsApiPayPage.aspx" />
+    <Content Include="wepay1\MakeQRCode.aspx" />
+    <Content Include="wepay1\MicroPayPage.aspx" />
+    <Content Include="wepay1\NativeNotifyPage.aspx" />
+    <Content Include="wepay1\NativePayPage.aspx" />
+    <Content Include="wepay1\OrderQueryPage.aspx" />
+    <Content Include="wepay1\ProductPage.aspx" />
+    <Content Include="wepay1\RefundPage.aspx" />
+    <Content Include="wepay1\RefundQueryPage.aspx" />
+    <Content Include="wepay1\ResultNotifyPage.aspx" />
+    <Content Include="wepay1\Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="wepay1\Scripts\jquery-1.7.1.js" />
+    <Content Include="wepay1\Scripts\jquery-1.7.1.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="api.aspx.cs">
-      <DependentUpon>api.aspx</DependentUpon>
+    <Compile Include="alipay\app_code\AlipayConfig.cs" />
+    <Compile Include="alipay\app_code\AlipayCore.cs" />
+    <Compile Include="alipay\app_code\AlipayNotify.cs" />
+    <Compile Include="alipay\app_code\AlipaySubmit.cs" />
+    <Compile Include="alipay\app_code\RSA.cs" />
+    <Compile Include="alipay\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="api.aspx.designer.cs">
-      <DependentUpon>api.aspx</DependentUpon>
+    <Compile Include="alipay\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alipay\notify_url.aspx.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alipay\return_url.aspx.cs">
+      <DependentUpon>return_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Code\JsonHelper.cs" />
     <Compile Include="Code\uiBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Code\Util.cs" />
+    <Compile Include="Code\Util.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="dazhuanpan\contents.aspx.cs">
       <DependentUpon>contents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -200,24 +264,33 @@
     <Compile Include="dazhuanpan\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="demo.aspx.cs">
-      <DependentUpon>demo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="demo.aspx.designer.cs">
-      <DependentUpon>demo.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="indexHandler.ashx.cs">
+      <DependentUpon>indexHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\address1.aspx.cs">
+      <DependentUpon>address1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="lsjyWeb\address1.aspx.designer.cs">
+      <DependentUpon>address1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="JsonHelper.cs" />
+    <Compile Include="lsjyWeb\address2.aspx.cs">
+      <DependentUpon>address2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\address2.aspx.designer.cs">
+      <DependentUpon>address2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\address3.aspx.cs">
+      <DependentUpon>address3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lsjyWeb\address3.aspx.designer.cs">
+      <DependentUpon>address3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="lsjyWeb\addressManage.aspx.cs">
       <DependentUpon>addressManage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -260,6 +333,13 @@
     <Compile Include="lsjyWeb\fail.aspx.designer.cs">
       <DependentUpon>fail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="lsjyWeb\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,15 +347,18 @@
     <Compile Include="lsjyWeb\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="lsjyWeb\js\pos.ashx.cs">
-      <DependentUpon>pos.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="lsjyWeb\login.aspx.cs">
+    <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="lsjyWeb\login.aspx.designer.cs">
+    <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\js\indexToBalance.ashx.cs">
+      <DependentUpon>indexToBalance.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="lsjyWeb\js\pos.ashx.cs">
+      <DependentUpon>pos.ashx</DependentUpon>
     </Compile>
     <Compile Include="lsjyWeb\myOrder.aspx.cs">
       <DependentUpon>myOrder.aspx</DependentUpon>
@@ -305,19 +388,12 @@
     <Compile Include="lsjyWeb\personalCenter.aspx.designer.cs">
       <DependentUpon>personalCenter.aspx</DependentUpon>
     </Compile>
-    <Compile Include="lsjyWeb\registA.aspx.cs">
+    <Compile Include="registA.aspx.cs">
       <DependentUpon>registA.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="lsjyWeb\registA.aspx.designer.cs">
+    <Compile Include="registA.aspx.designer.cs">
       <DependentUpon>registA.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="lsjyWeb\registB.aspx.cs">
-      <DependentUpon>registB.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="lsjyWeb\registB.aspx.designer.cs">
-      <DependentUpon>registB.aspx</DependentUpon>
     </Compile>
     <Compile Include="lsjyWeb\selectAddress.aspx.cs">
       <DependentUpon>selectAddress.aspx</DependentUpon>
@@ -340,29 +416,122 @@
     <Compile Include="lsjyWeb\updateAddress.aspx.designer.cs">
       <DependentUpon>updateAddress.aspx</DependentUpon>
     </Compile>
-    <Compile Include="lsjyWeb\updatePass.aspx.cs">
+    <Compile Include="updatePass.aspx.cs">
       <DependentUpon>updatePass.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="lsjyWeb\updatePass.aspx.designer.cs">
+    <Compile Include="updatePass.aspx.designer.cs">
       <DependentUpon>updatePass.aspx</DependentUpon>
     </Compile>
-    <Compile Include="lsjyWeb\updatePassB.aspx.cs">
+    <Compile Include="updatePassB.aspx.cs">
       <DependentUpon>updatePassB.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="lsjyWeb\updatePassB.aspx.designer.cs">
+    <Compile Include="updatePassB.aspx.designer.cs">
       <DependentUpon>updatePassB.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="publicClass.cs" />
-    <Compile Include="sms\CCPRestSDK.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Code\publicClass.cs" />
+    <Compile Include="registB.aspx.cs">
+      <DependentUpon>registB.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="registB.aspx.designer.cs">
+      <DependentUpon>registB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sms\CCPRestSDK.cs" />
+    <Compile Include="wepay1\business\DownloadBill.cs" />
+    <Compile Include="wepay1\business\JsApiPay.cs" />
+    <Compile Include="wepay1\business\MicroPay.cs" />
+    <Compile Include="wepay1\business\NativeNotify.cs" />
+    <Compile Include="wepay1\business\NativePay.cs" />
+    <Compile Include="wepay1\business\OrderQuery.cs" />
+    <Compile Include="wepay1\business\Refund.cs" />
+    <Compile Include="wepay1\business\RefundQuery.cs" />
+    <Compile Include="wepay1\business\ResultNotify.cs" />
+    <Compile Include="wepay1\DownloadBillpage.aspx.cs">
+      <DependentUpon>DownloadBillpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\DownloadBillpage.aspx.designer.cs">
+      <DependentUpon>DownloadBillpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\JsApiPayPage.aspx.cs">
+      <DependentUpon>JsApiPayPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\JsApiPayPage.aspx.designer.cs">
+      <DependentUpon>JsApiPayPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\lib\Config.cs" />
+    <Compile Include="wepay1\lib\Data.cs" />
+    <Compile Include="wepay1\lib\Exception.cs" />
+    <Compile Include="wepay1\lib\HttpService.cs" />
+    <Compile Include="wepay1\lib\Log.cs" />
+    <Compile Include="wepay1\lib\Notify.cs" />
+    <Compile Include="wepay1\lib\WxPayApi.cs" />
+    <Compile Include="wepay1\MakeQRCode.aspx.cs">
+      <DependentUpon>MakeQRCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\MakeQRCode.aspx.designer.cs">
+      <DependentUpon>MakeQRCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\MicroPayPage.aspx.cs">
+      <DependentUpon>MicroPayPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\MicroPayPage.aspx.designer.cs">
+      <DependentUpon>MicroPayPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\NativeNotifyPage.aspx.cs">
+      <DependentUpon>NativeNotifyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\NativeNotifyPage.aspx.designer.cs">
+      <DependentUpon>NativeNotifyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\NativePayPage.aspx.cs">
+      <DependentUpon>NativePayPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\NativePayPage.aspx.designer.cs">
+      <DependentUpon>NativePayPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\OrderQueryPage.aspx.cs">
+      <DependentUpon>OrderQueryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\OrderQueryPage.aspx.designer.cs">
+      <DependentUpon>OrderQueryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\ProductPage.aspx.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\ProductPage.aspx.designer.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\RefundPage.aspx.cs">
+      <DependentUpon>RefundPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\RefundPage.aspx.designer.cs">
+      <DependentUpon>RefundPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\RefundQueryPage.aspx.cs">
+      <DependentUpon>RefundQueryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\RefundQueryPage.aspx.designer.cs">
+      <DependentUpon>RefundQueryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wepay1\ResultNotifyPage.aspx.cs">
+      <DependentUpon>ResultNotifyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wepay1\ResultNotifyPage.aspx.designer.cs">
+      <DependentUpon>ResultNotifyPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -370,12 +539,12 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="lsjyWeb\css\index.css" />
-    <Content Include="lsjyWeb\index.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="lsjyWeb\success.aspx" />
     <Content Include="lsjyWeb\updateAddress.aspx" />
-    <Content Include="lsjyWeb\updatePass.aspx" />
-    <Content Include="lsjyWeb\updatePassB.aspx" />
+    <Content Include="updatePass.aspx" />
+    <Content Include="updatePassB.aspx" />
+    <Content Include="registB.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -387,7 +556,17 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lsjyWeb\js\indexToBalance.ashx" />
     <Content Include="lsjyWeb\js\pos.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="indexHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="json\WxPayAPI.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wepay1\cert\apiclient_cert.p12" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

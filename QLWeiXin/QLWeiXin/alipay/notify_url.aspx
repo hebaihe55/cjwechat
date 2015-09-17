@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="notify_url.aspx.cs" Inherits="Com.Alipiay.notify_url" %>

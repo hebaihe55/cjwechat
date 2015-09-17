@@ -14,9 +14,20 @@ namespace QLWeiXin.lsjyWeb
         public DataTable shopOnce;
         protected void Page_Load(object sender, EventArgs e)
         {
+            string shop_name = "";
+            string address_info = "";
             //Get提交查询就近门店信息展示出
-            string shop_name = Request.QueryString["shop_name"].ToString();
-            string address_info = Request.QueryString["address_info"].ToString();
+
+
+            if (Request.QueryString["shop_name"] != null)
+            {
+                shop_name = Request.QueryString["shop_name"].ToString();
+            }
+            if (Request.QueryString["shop_name"] != null)
+            {
+                address_info = Request.QueryString["address_info"].ToString();
+            }
+             
             this.shopName.Text = shop_name;
             this.shopAddress.Text = address_info;
             //post提交查询所有门店信息展示出

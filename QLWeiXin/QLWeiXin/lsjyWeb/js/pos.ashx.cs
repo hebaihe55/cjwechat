@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json.Linq;
+using QLWeiXin.Code;
 
 namespace QLWeiXin.lsjyWeb.js
 {

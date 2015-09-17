@@ -12,6 +12,15 @@ namespace QLWeiXin.lsjyWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["userInfo"] == null)
+            {
+
+
+                Response.Redirect("../login.aspx");
+
+
+            }
+
             userInfo ui=new userInfo();
 
             ui=(userInfo)Session["userInfo"];

@@ -1,0 +1,113 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+}
+.bodys
+{
+    width:100%;
+}
+.backgrounds
+{
+    width:640px;
+    height:1030px;
+    background-color:#C8C8C8;
+}
+.title_name
+{
+    width:640px;
+    height:80px;
+    float:left;
+    background-color:#5f9f3f;
+}
+#title_name_ico
+{
+    width:60px;
+    height:60px;
+    float:left;
+    text-align:left;
+    text-align:center;
+    padding-top:20px;
+}
+#title_name_font
+{
+    width:560px;
+    height:65x;
+    text-align:center;
+    font-size:36px;
+    font-family:微软雅黑;
+    padding-top:15px;
+    color:White;
+    padding-right:20px;
+}
+#person_title
+{
+    width:640px;
+    float:left;
+    background-color:White;
+    height:160px;
+}
+#person_img
+{
+    width:200px;
+    height:160px;
+    float:left;
+}
+#person_uid
+{
+    width:400px;
+    height:140px;
+    float:left;
+    font-family:微软雅黑;
+    font-size:26px;
+    text-align:left;
+    color:#919090;
+    padding-top:20px;
+    line-height:60px;
+}
+.gray
+{
+    width:640px;
+    height:30px;
+    float:left;
+}
+#person_content
+{
+    width:640px;
+    height:243px;
+    float:left;
+}
+#person_content2
+{
+    width:640px;
+    height:162px;
+    float:left;
+}
+.person_tr
+{
+    width:640px;
+    height:80px;
+    border-bottom:1px solid rgb(200,200,200);
+    float:left;
+    background-color:white;
+    font-size:28px;
+    font-family:微软雅黑;
+}
+.tr_ico
+{
+    width:79px;
+    height:65px;
+    float:left;
+    padding-top:14px;
+    background-color:transparent;
+}
+.tr_name
+{
+    width:300px;
+    float:left;
+    padding-top:18px;
+    height:61px;
+    text-align:left;
+    background-color:transparent;
+}

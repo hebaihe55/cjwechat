@@ -11,7 +11,7 @@ namespace QLWeiXin.Code
 		{
             if (Session["userInfo"] == null)
             {
-                Response.Redirect("login.aspx");
+                Response.Redirect("../login.aspx");
             }
         }
     }

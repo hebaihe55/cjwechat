@@ -22,14 +22,40 @@ namespace QLWeiXin.lsjyWeb
                 {
                     GetGoodsListByCategory();
                 }
+                else if (Request.Form["action"].ToString() == "addcar")
+                {
+                    AddCar();
+                }
             
         }
+
+
+        protected void AddCar()
+        {
+            string url = "http://120.27.45.83:8085/api/Mall/AddGoodsToCart";
+
+
+
+
+
+
+            string para = "goods_id=" + Request.Form["id"].ToString() + "&user_id=" + Request.Form["userid"].ToString() + "&goods_num=1";
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+        }
+
+
+
 
         protected void GetGoodsListByCategory()
         {
 
 
-            string url = "http://120.27.45.83:8082/api/Mall/GetGoodsListByCategory";
+            string url = "http://120.27.45.83:8085/api/Mall/GetGoodsListByCategory";
 
             string para = "start=0&limit=100&type=" + Request.Form["cid"].ToString();
 
@@ -53,13 +79,37 @@ namespace QLWeiXin.lsjyWeb
 
 
 
+        protected void LBSPost()
+        {
 
+
+            string url = "http://120.27.45.83:8085/api/Mall/LBSPost";
+
+            string para = "longitude="+ Request.Form["x"].ToString();
+
+
+
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+
+            Response.Write(resp.data.ToString());
+
+
+
+
+
+
+        }
 
 
         public string GetIsUserValidatePhone(string mobile)
         {
 
-            string url = "http://120.27.45.83:8082/api/User/ValidatePhone";
+            string url = "http://120.27.45.83:8085/api/User/ValidatePhone";
 
            
 

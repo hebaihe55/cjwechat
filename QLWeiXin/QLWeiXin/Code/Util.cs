@@ -8,9 +8,15 @@ using System.Data;
 
 namespace QLWeiXin.Code
 {
-    public class Util
+    public class Util: System.Web.UI.Page
     {
 
+
+
+        public Util()
+        { 
+        
+        }
 
         public static resp GetResp(string url,string paras)
         {
@@ -21,19 +27,333 @@ namespace QLWeiXin.Code
        
         }
 
+        public static string GetOrderDetail(string orderid)
+        {
 
+            string url = "http://120.27.45.83:8085/api/Mall/GetOrderDetail";
+
+            string para = "order_id=" + orderid;
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            return resp.data.ToString();
+
+        }
+
+
+
+        public static string EditOrderShippingStatus(string orderid)
+        {
+
+            string url = "http://120.27.45.83:8085/api/Mall/EditOrderShippingStatus";
+
+            string para = "order_id=" + orderid;
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            return resp.code.ToString();
+
+        }
+
+
+
+        public static string CancelOrder(string orderid)
+        {
+
+            string url = "http://120.27.45.83:8085/api/Mall/CancelOrder";
+
+            string para = "order_id=" + orderid;
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            return resp.code.ToString();
+
+        }
+
+
+
+
+
+        public static string WxPay(string Orderno)
+        {
+
+            string url = "http://120.27.45.83:8085/api/User/WxPay";
+
+            string para = "Orderno=" + Orderno ;
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            return resp.data.ToString();
+
+        }
+
+
+
+
+
+        public static  string  getorderid(string uid,string orid)
+        {
+            string url = "http://120.27.45.83:8085/api/Mall/GetUserOrderList";
+
+
+            string ordercode = "";
+
+
+            string para = "user_id=" + uid + "&type=0&start=0&limit=100";
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            resp resp1 = JsonHelper.DeserializeJsonToObject<resp>(resp.data.ToString());
+            List<orderInfo> orders=JsonHelper.DeserializeJsonToList<orderInfo>(resp1.list.ToString());
+
+            foreach (orderInfo oi in orders)
+
+            {
+                if (oi.order_id == orid)
+                {
+
+                    ordercode= oi.order_code;
+
+                    break;
+                }
+            
+            
+            
+            }
+
+            return ordercode;
+
+         
+
+        }
+
+
+        public static List<ShopArea3> GetArea()
+        {
+            string url = "http://120.27.45.83:8085/api/Mall/LBSGetExtractingShopArea";
+
+
+
+
+
+
+            string para = "address=上海";
+
+            resp resp = new resp();
+
+
+             List<ShopArea3> sa3 = JsonHelper.DeserializeJsonToList<ShopArea3>(Util.GetResp(url, para).data.ToString());
+
+             return sa3;
+
+        }
+
+
+
+        protected void AddCar()
+        {
+            string url = "http://120.27.45.83:8085/api/Mall/AddGoodsToCart";
+
+
+
+
+
+
+            string para = "goods_id=" + Request.Form["id"].ToString() + "&user_id=" + Request.Form["userid"].ToString() + "&goods_num=1";
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+        }
+
+
+
+        public static string createOrder(string userid, string addrid, string storeid, string pay_type, string postprice, string post_type, string goods_id, string goods_num, string ordernote, string deleveryTime, string shopid)
+        {
+
+            string url = "http://120.27.45.83:8085/api/Mall/createOrder";
+
+            string para = "user_id=" + userid + "&addressId=" + addrid + "&storeid=" + storeid + "&pay_type=" + pay_type + "&postprice=" + postprice + "&post_type=" + post_type + "&goods_id_list=" + goods_id + "&goods_num_list=" + goods_num + "&ordernote=" + ordernote + "&DeliveryTime=" + deleveryTime + "&ExtractingShopId=" + shopid;
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            if (resp.code == 0)
+            {
+
+                return "0";
+            }
+
+
+            return resp.data.ToString();
+        
+        }
+
+
+        public static string clearCart(string uid)
+        {
+            string url = "http://120.27.45.83:8085/api/Mall/DelAllGoodsToCart";
+
+
+
+
+
+
+            string para = "user_id=" + uid;
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            return resp.code.ToString();
+
+        }
+
+
+
+
+
+        public static string  listCart(string uid)
+        {
+            string url = "http://120.27.45.83:8085/api/Mall/showCart";
+
+
+
+                
+
+
+            string para = "user_id=" + uid;
+
+            resp resp = new resp();
+
+
+            resp = QLWeiXin.Code.Util.GetResp(url, para);
+
+            return resp.data.ToString();
+
+        }
 
 
      
     }
+
+
+    public class storeInfo
+    {
+        public string Mch_id { get; set; }
+        public string title { get; set; }
+ 
+        public string url { get; set; }
+        public string SslEnable { get; set; }
+        public string secureurl { get; set; }
+        public string hosts { get; set; }
+        public string displayorder { get; set; }
+        public string address { get; set; }
+        public string longitude { get; set; }
+        public string lotitude { get; set; }
+    }
+
+
+    public class chatPay {
+        public string appid { get; set; }
+        public string mch_id { get; set; }
+        public string nonce_str { get; set; }
+        public string prepay_id { get; set; }
+        public string timeStamp { get; set; }
+        public string sign { get; set; }
+    
+    
+    
+    }
+
+
+
     public class resp
     {
         public int code { get; set; }
         public string msg { get; set; }
         public string time { get; set; }
         public object data { get; set; }
+        public object list { get; set; }
+    }
+
+
+    public class ShopArea 
+    {
+
+        public string uid { get; set; }
+
+        public string province { get; set; }
+
+        public string geotable_id { get; set; }
+        public string district { get; set; }
+        public string create_time { get; set; }
+        public string city { get; set; }
+        public string mch_id { get; set; }
+        public string address { get; set; }
+        public string title { get; set; }
+        public string coord_type { get; set; }
+
+        public string type { get; set; }
+        public string distance { get; set; }
+        public string weight { get; set; }
+
+       
+   
+
+    
+    
+    }
+
+    public class ShopArea3
+    {
+
+        public string totalNum { get; set; }
+
+        public object Shoplist { get; set; }
 
     }
+
+
+
+    public class ShopArea1 {
+
+        public string totalNum { get; set; }
+
+        public object list { get; set; }
+    
+    }
+
+
+    public class ShopArea2
+    {
+
+        public string Area { get; set; }
+
+        public object list { get; set; }
+    
+    }
+
 
     public class userInfo
     {
@@ -47,6 +367,7 @@ namespace QLWeiXin.Code
         public string email { get; set; }
         public string score { get; set; }
         public string pwd { get; set; }
+        public string addr { get; set; }
 
     }
     public class categoryInfo
@@ -62,6 +383,79 @@ namespace QLWeiXin.Code
         public int totalNum { get; set; }
         public object list { get; set; }
     }
+
+    public class goods_list
+    {
+        public string id { get; set; }
+        public string name { get; set; }
+        public string img { get; set; }
+        public string num { get; set; }
+        public string price { get; set; }
+        public string integral { get; set; }
+        public string goodstype { get; set; }
+        public string trade_price { get; set; }
+        public string IsReview { get; set; }
+        public string order_code { get; set; }
+
+    }
+
+    public class orderInfoDetail
+    {
+        public string order_id { get; set; }
+        public string order_code { get; set; }
+        public object goods_list { get; set; }
+        public string price { get; set; }
+        public string user_id { get; set; }
+        public string pay_type { get; set; }
+        public string pay_status { get; set; }
+        public string postprice { get; set; }
+        public string Address { get; set; }
+        public string post_type { get; set; }
+        public string orderstatus { get; set; }
+        public string img { get; set; }
+        public string createDate { get; set; }
+        public string userAddressmessage { get; set; }
+        public string DeliveryTime { get; set; }
+        public string ExtractingShopName { get; set; }
+        public string ExtractingShopAddress { get; set; }
+
+
+
+    
+    
+    }
+
+    public class orderInfo
+    {
+        public string order_id { get; set; }
+        public string order_code { get; set; }
+        public object goods_list { get; set; }
+        public string price { get; set; }
+        public string orderstatus { get; set; }
+        public string img { get; set; }
+        public string createDate { get; set; }
+        public string Pay_type { get; set; }
+        public string Name { get; set; }
+        public string DeliveryTime { get; set; }
+        
+    
+    }
+
+      public class orderInfo1
+      {
+      public string start { get; set; }
+            public string limit { get; set; }
+      
+            public string totalNum { get; set; }
+      
+            public object  list { get; set; }
+      
+      
+      }
+
+
+ 
+
     public class shpCarList
     {
 
